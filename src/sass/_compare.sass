@@ -1,0 +1,132 @@
+.compare
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      left: -1px
+      bottom: -1px
+    &--1
+      &::before
+        width: 33%
+        padding-top: 16.5%
+        background: url(../img/pattern-24.svg) no-repeat left bottom / 100%
+    &--2
+      &::before
+        right: -1px
+        padding-top: 33%
+        background: url(../img/pattern-25.svg) no-repeat left bottom / 100%
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+  &__block
+    &-heading
+      &-wrap
+        position: relative
+        padding: 52px 60px
+        max-height: 142px
+        background: $bg
+    &:nth-child(even)
+      .compare__block-heading
+        text-align: right
+  &__row
+    &-wrap
+      position: relative
+  &__items
+    padding: 30px 0
+    &-wrap
+      height: calc(100% - 142px)
+  &__item
+    padding: 30px 50px 30px 60px
+    &:nth-child(1):not(:last-child),
+    &:nth-child(2):not(:last-child)
+      min-height: 289px
+    &-heading
+      margin-bottom: 20px
+    &-plus,
+    &-minus
+      position: relative
+      width: 30px
+      height: 30px
+      margin-bottom: 17px
+      border-radius: 3px
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 12px
+        height: 2px
+        background: $black
+    &-minus
+      background: #dddddd
+    &-plus
+      background: $yellow-4
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 2px
+        height: 12px
+        background: $black
+  &__img
+    position: absolute
+    bottom: 118px
+    right: -30px
+    &-wrap
+      overflow: hidden
+  @media (max-width: 1499.98px)
+    &__img
+      bottom: 92px
+    &__block
+      &-heading
+        &-wrap
+          max-height: 137px
+    &__items
+      height: calc(100% - 137px)
+    &__item
+      padding: 15px 30px
+      &:nth-child(1):not(:last-child),
+      &:nth-child(2):not(:last-child)
+        min-height: 236px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px
+    &__img
+      &-wrap
+        display: none
+    &__block
+      &-row
+        height: auto
+      &:nth-child(even)
+        .compare__block-heading
+          text-align: left
+    &__items
+      height: auto
+    &__item
+      &:nth-child(1):not(:last-child),
+      &:nth-child(2):not(:last-child)
+        min-height: auto
+  @media (max-width: 767.98px)
+    &__items
+      padding: 30px 0
+    &__item
+      padding: 30px 60px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__block
+      &-heading
+        &-wrap
+          padding: 30px 15px
+    &__items
+      padding: 15px 0
+    &__item
+      padding: 15px

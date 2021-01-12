@@ -1,0 +1,136 @@
+.services
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+    &--1
+      &::before
+        right: -1px
+        bottom: 89px
+        width: 50%
+        padding-top: 66%
+        background: url(../img/pattern-6.svg) no-repeat right bottom / 100%
+    &--2
+      &::before
+        left: -1px
+        top: -1px
+        width: calc(50% + 2px)
+        padding-top: 33%
+        background: url(../img/pattern-7.svg) no-repeat left top / 100%
+  &__header
+    align-items: flex-end
+  &__footer
+    padding-bottom: 120px
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+  &__slider
+    overflow: visible
+    &-wrapper
+      position: relative
+      margin-top: -1px
+      margin-bottom: -1px
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        width: 1px
+        background: $border
+        z-index: 10
+    &-item
+  &__arrows
+    margin-left: auto
+    justify-content: flex-end
+  &__item
+    height: auto
+    padding: 52px 60px 108px
+    background: $bg
+    &-header
+      display: flex
+      align-items: flex-start
+      height: auto
+      margin-bottom: 20px
+    &-footer
+      position: absolute
+      left: 60px
+      right: 60px
+      bottom: 52px
+      display: flex
+      justify-content: space-between
+    &-icon
+      &-wrap
+        flex: 0 0 60px
+        max-width: 60px
+        margin-right: 22px
+    &-price
+      margin-bottom: 0
+      &::after
+        content: '\00a0\20BD'
+  @media (max-width: 1499.98px)
+    &__footer
+      padding-bottom: 90px
+    &__pattern
+      &--1
+        &::before
+          bottom: 71px
+    &__item
+      padding: 45px 30px 87px
+      &-footer
+        left: 30px
+        right: 30px
+        bottom: 45px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px 52px
+    &__item
+      &-header
+        margin-bottom: 17px
+      &-footer
+        left: 30px
+        right: 30px
+  @media (max-width: 991.98px)
+    &__header
+      justify-content: center
+    &__arrows
+      margin-left: -1px
+    &__item
+      &-header
+        flex-wrap: wrap
+      &-icon
+        &-wrap
+          flex-basis: 100%
+          max-width: 100%
+          margin-bottom: 17px
+  @media (max-width: 767.98px)
+    &__item
+      padding: 52px 60px 92px
+      &-footer
+        left: 60px
+        right: 60px
+        bottom: 52px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__footer
+      padding-bottom: 60px
+    &__arrows
+      &-wrap
+        flex-basis: 120px
+        max-width: 120px
+    &__arrow
+      &-wrap
+        flex-basis: 60px
+        max-width: 60px
+    &__item
+      padding: 30px 15px 67px
+      &-footer
+        left: 15px
+        right: 15px
+        bottom: 30px

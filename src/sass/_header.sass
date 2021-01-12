@@ -1,0 +1,187 @@
+.header
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  right: 0
+  background: #ffffff
+  &__logo
+    display: flex
+    align-items: center
+    justify-content: center
+    &-img
+      flex: 0 0 auto
+      max-width: 134px
+      margin-right: 16px
+    &-caption
+      margin-bottom: 0
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: center
+  &__select
+    border: none
+    appearance: none
+    box-shadow: none
+    background: none
+    text-decoration: underline
+    text-decoration-style: dotted
+    cursor: pointer
+    &:focus
+      outline: none
+    &-caption
+      margin-right: 5px
+      padding-left: 19px
+      background: url(../img/pin.svg) no-repeat left center / 11px 14px
+      color: $text-gray
+    &-label
+      display: flex
+      align-items: center
+      margin: 0
+      padding-left: 30px
+      height: 100%
+  &__phone
+    &-wrap
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-end
+      padding: 10px 30px 10px 0
+  &__nav
+    &-list
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 90px
+      padding: 30px
+    &-link
+      position: relative
+      transition: color 0.25s
+      cursor: pointer
+      &:hover
+        color: $orange
+        path
+          fill: $orange
+      &-icon
+        flex: 0 0 6px
+        max-width: 6px
+        margin-left: 4px
+        path
+          transition: fill 0.25s
+      &--dropdown
+        display: flex
+        align-items: center
+  &__btn
+    height: 100%
+  &__burger
+    display: none
+    & > *
+      pointer-events: none
+  @media (max-width: 1499.98px)
+    &__logo
+      &-img
+        max-width: 100px
+  @media (max-width: 1199.98px)
+    &__logo
+      padding: 10px
+      &-img
+        max-width: 60px
+      &-caption
+        font-size: 20px
+      &-wrap
+        justify-content: flex-start
+    &__select
+      &-label
+        padding-left: 20px
+      &-caption
+        padding-left: 0
+        background: none
+    &__phone
+      &-wrap
+        padding-right: 20px
+    &__burger
+      display: flex
+      align-items: center
+      justify-content: center
+      &-icon
+        position: relative
+        width: 16px
+        height: 12px
+        pointer-events: none
+      &-line
+        position: absolute
+        left: 0
+        width: 100%
+        height: 1px
+        background: $black
+        transition: all 0.25s
+        &:nth-child(1)
+          top: 0
+        &:nth-child(2)
+          top: 50%
+          transform: translate(0, -50%)
+        &:nth-child(3)
+          bottom: 0
+      &.active
+        .header__burger-line
+          &:nth-child(1)
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) rotate(45deg)
+          &:nth-child(2)
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) rotate(45deg)
+            opacity: 0
+          &:nth-child(3)
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) rotate(-45deg)
+            bottom: auto
+    &__nav
+      &-wrap
+        display: none
+    &__select
+      &-wrap
+        display: none
+    &__btn
+      &-icon
+        display: none
+  @media (max-width: 991.98px)
+    &__search-btn
+      &-wrap
+        display: none
+
+    &__logo
+      padding: 5px
+      &-wrap
+        justify-content: center
+      &-img
+        margin-right: 10px
+        max-width: 40px
+      &-caption
+        font-size: 18px
+  @media (max-width: 767.98px)
+    &__row
+      justify-content: space-between
+    &__btn
+      &-wrap
+        display: none
+    &__logo
+      &-img
+        margin: 0
+      &-caption
+        display: none
+  @media (max-width: 575.98px)
+    &__info
+      flex-basis: 83.33333%
+      max-width: 83.33333%
+    &__phone
+      &-wrap
+        flex-basis: calc(100% - 60px)
+        max-width: calc(100% - 60px)
+    &__btns
+      flex-basis: 60px
+      max-width: 60px
+
+

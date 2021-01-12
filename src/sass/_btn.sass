@@ -1,0 +1,38 @@
+.btn
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 90px
+  background-color: #ffffff
+  &__icon
+    flex: 0 0 auto
+    max-width: 20px
+    margin-right: 9px
+  &--small
+      height: 60px
+  &--transparent
+    background-color: transparent
+  &--yellow
+    background-color: $yellow-2
+  &--yellow-2
+    background-color: $yellow-3
+  &--icon
+    height: auto
+    background-repeat: no-repeat
+    background-position: center
+    font-size: 0
+    &::before
+      content: ''
+      display: block
+      padding-top: 100%
+  &--arrow
+    height: 100%
+  @media (max-width: 1499.98px)
+    height: 72px
+    &--small
+      height: 60px
+  @media (max-width: 575.98px)
+    height: 60px
+    // &--small
+    //   height: 48px

@@ -1,0 +1,70 @@
+.dropdown-menu
+  position: fixed
+  z-index: 100
+  top: 150px
+  left: 0
+  right: 0
+  background: #dddddd
+  opacity: 0
+  pointer-events: none
+  &.active
+    opacity: 1
+    pointer-events: auto
+  &__triangle
+    position: absolute
+    top: -10px
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -1px
+      width: 83.33333%
+      padding-top: 99%
+      background: url(../img/pattern-20.svg) no-repeat left top / 100%
+  &__row
+    display: none
+    &.active
+      display: flex
+    &-wrap
+      position: relative
+      padding: 30px 0 52px
+  &__tab
+    display: none
+    &.active
+      display: flex
+    &-list
+      padding: 30px 0 30px 30px
+      line-height: 2
+  &__tabs
+    &-wrap
+      margin-left: auto
+  &__pills
+    &-item
+      position: relative
+      padding: 30px 60px 30px 30px
+      text-decoration: underline
+      cursor: pointer
+      &::after
+        content: ''
+        position: absolute
+        top: 37px
+        right: 30px
+        width: 9px
+        height: 13px
+        background: url(../img/right.svg) no-repeat center / 100%
+        opacity: 0
+      &.active
+        text-decoration: none
+        &::after
+          opacity: 1
+  @media (max-width: 1499.98px)
+    top: 141px
+    &__tab
+      &-list
+        padding: 30px 15px 30px 30px
+        &:last-child
+          padding-left: 15px
+          padding-right: 30px
+  @media (max-width: 1199.98px)
+    display: none

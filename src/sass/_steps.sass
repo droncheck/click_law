@@ -1,0 +1,241 @@
+.steps
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      right: -1px
+      top: -1px
+      background-repeat: no-repeat
+      background-position: top right
+      background-size: 100%
+    &--1
+      &::before
+        width: calc(100% - 66.66667%)
+        padding-top: 50%
+        background-image: url(../img/pattern-2.svg)
+    &--2
+      &::before
+        left: -1px
+        padding-top: 66%
+        background-image: url(../img/pattern-3.svg)
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+      &--bg
+        &-gray
+          background: $bg
+  &__tabs
+    &-pill
+      position: relative
+      padding: 0px 60px
+      text-align: center
+      color: $text-gray
+      &-text
+        display: inline-block
+        position: relative
+        padding: 37px 0
+        &::before
+          content: ''
+          position: absolute
+          left: 0
+          right:  0
+          bottom: 0
+          height: 4px
+          background: $yellow-4
+      &.active
+        color: $text-black
+        .steps__tabs-pill-text
+          &::after
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+            height: 10px
+            background: $yellow-4
+      &::before
+        content: ''
+        position: absolute
+        left: 50%
+        right: -50%
+        bottom: 0
+        height: 4px
+        background: $yellow-4
+  &__item
+    padding-bottom: 70px
+    &--padding-top
+      &-120
+        padding-top: 120px
+    &-main
+      &::before
+        content: ''
+        position: absolute
+        left: 0px
+        right: -0px
+        top: 89px
+        height: 4px
+        background: $yellow-4
+    &--1
+      .steps__item-main
+        &::before
+          left: 60px
+    &--2,
+    &--3
+      .steps__item-main
+        &::before
+          right: 55px
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        width: 55px
+        border-width: 4px
+        border-color: $yellow-4
+    &--2
+      &::after
+        top: 89px
+        height: calc(100% - 89px)
+        border-top-style: solid
+        border-right-style: solid
+        border-top-right-radius: 60px
+      &.steps__item--padding-top-120
+        &::after
+          top: 209px
+          height: calc(100% - 209px)
+    &--3
+      &::after
+        top: 0
+        height: 93px
+        border-bottom-style: solid
+        border-right-style: solid
+        border-bottom-right-radius: 60px
+    &--6
+      .steps__item-main
+        &::before
+          left: 96px
+    &-main
+      position: relative
+      padding: 0 55px 20px 60px
+    &-heading,
+    &-header
+      margin-bottom: 20px
+    &-icon
+      position: relative
+      height: 60px
+      margin-bottom: 17px
+      &--big
+        height: 120px
+        margin-bottom: 4px
+        top: -27px
+        z-index: -1
+    &-number
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 25px
+      height: 30px
+      border-radius: 3px
+      background: $yellow-4
+      margin-bottom: 17px
+      font-size: 0.875em
+      font-weight: 700
+  @media (max-width: 1499.98px)
+    &__heading
+      br
+        display: none
+      &-wrap
+    &__tabs
+      &-pill
+        padding: 0 30px
+        &-text
+          padding: 39px 0 38px
+    &__item
+      &-main
+        padding: 0 30px 20px
+      &--6
+        .steps__item-main
+          &::before
+            left: 66px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px 52px
+    &__tabs
+      &-pill
+        padding: 0 60px
+        &-text
+          padding: 29px 0
+          &::before
+            display: none
+        &::before
+          display: none
+    &__item
+      padding-bottom: 45px
+      &--padding-top
+        &-120
+          padding-top: 0
+      &--1
+        padding-bottom: 92px
+      &::after
+        display: none
+      &-heading
+        align-self: center
+      &-header
+        display: flex
+        align-items: flex-start
+      &-number
+        margin-bottom: 0
+        margin-right: 22px
+      &-main
+        padding: 45px 30px 0px
+        &::before
+          display: none
+      &-icon
+        &--big
+          top: 0
+          height: 60px
+          margin-bottom: 17px
+      &-btn
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+  @media (max-width: 991.98px)
+    &__item
+      &-number
+        margin-right: 12px
+  @media (max-width: 767.98px)
+    &__item
+      padding-bottom: 52px
+      &--1
+        padding-bottom: 92px
+      &-main
+        padding: 52px 60px 0
+      &-icon
+        &--big
+          height: 107px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px 30px
+    &__tabs
+      &-pill
+        padding: 0 15px
+        &-text
+          padding: 22px 0
+        &.active
+          .steps__tabs-pill-text
+            &::after
+              height: 4px
+    &__item
+      padding-bottom: 30px
+      &--1
+        padding-bottom: 77px
+      &-main
+        padding: 30px 15px 0
+      &--1
+        padding-bottom: 80px

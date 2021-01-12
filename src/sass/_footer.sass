@@ -1,0 +1,100 @@
+.footer
+  color: #ffffff
+  background: $black
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      right: -60px
+      bottom: -1px
+      width: 66%
+      padding-top: 34%
+      background: url(../img/pattern-19.svg) no-repeat left bottom / 100%
+  &__text
+    color: rgba(255, 255, 255, 0.5)
+  &__form
+    padding: 60px 60px 30px
+    &-heading
+      color: $yellow-2
+      &-wrap
+        margin-bottom: 24px
+    &-grid
+      right: auto
+      width: 16px
+    &-row
+      height: auto
+      margin-bottom: 8px
+      &::before
+        content: ''
+        position: absolute
+        left: -60px
+        top: 0
+        bottom: 0
+        width: 16px
+        background: $yellow-2
+    &-text
+      &-link
+        &:hover
+          color: #ffffff
+  &__logo
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 45px 60px
+    text-align: center
+    &-img
+      margin-bottom: 10px
+  &__block
+    padding: 52px 60px
+    &-heading
+      display: block
+      margin-bottom: 16px
+    &-list
+      line-height: 2
+    &-link
+      transition: color 0.25s
+      &:hover
+        color: $yellow-2
+  &__info-block
+    padding: 15px 60px
+  @media (max-width: 1499.98px)
+    &__form
+      padding: 72px 30px 30px
+      &-row
+      &-row
+        &::before
+          left: -30px
+    &__logo
+      padding: 45px 30px
+    &__block
+      padding: 45px 30px
+    &__info-block
+      padding: 15px 30px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__form
+      padding-top: 0
+      &-grid
+        display: none
+      &-row
+        &::before
+          display: none
+  @media (max-width: 767.98px)
+    &__form
+      &-row
+        margin-bottom: 12px
+  @media (max-width: 575.98px)
+    &__form
+      padding: 0 15px 30px
+    &__logo
+      padding: 30px 15px
+    &__block
+      padding: 30px 15px
+    &__info-block
+      padding: 0
+      line-height: 2
+    &__footer
+      padding: 30px 15px

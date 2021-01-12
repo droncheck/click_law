@@ -1,0 +1,56 @@
+.service
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      bottom: -1px
+      right: -1px
+      width: 50%
+      padding-top: 33%
+      background: url(../img/pattern-21.svg) no-repeat right bottom / 100%
+  &__cover
+    position: relative
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    overflow: hidden
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(0, 0, 0, 0.4)
+  &__heading
+    margin-bottom: 24px
+  &__text
+    margin-bottom: 35px
+  &__texts
+    padding: 52px 120px 52px 60px
+  &__footer
+    padding-bottom: 120px
+  @media (max-width: 1499.98px)
+    &__texts
+      padding: 52px 60px
+    &__footer
+      padding-bottom: 90px
+  @media (max-width: 1199.98px)
+    &__cover
+      height: auto
+      &::before
+        content: ''
+        display: block
+        padding-top: 60%
+    &__pattern
+      &::before
+        display: none
+  @media (max-width: 767.98px)
+    &__text
+      margin-bottom: 24px
+  @media (max-width: 575.98px)
+    &__texts
+      padding: 30px 15px
+    &__footer
+      padding-bottom: 60px

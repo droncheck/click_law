@@ -1,0 +1,103 @@
+.garanty
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      right: -1px
+    &--1
+      &::before
+        bottom: -58px
+        width: 50%
+        padding-top: 66%
+        background: url(../img/pattern-11.svg) no-repeat bottom right / 100%
+    &--2
+      &::before
+        bottom: 0
+        width: 33.33333%
+        background: url(../img/pattern-12.svg) no-repeat bottom right / 100%
+        padding-top: 33.33333%
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+  &__row
+    padding-bottom: 60px
+  &__item
+    padding: 0 52px 52px 60px
+    margin-bottom: 52px
+    &-heading
+      margin-bottom: 10px
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      margin-bottom: 0
+  &__main-item
+    position: relative
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &::before
+      content: ''
+      display: block
+      padding-top: 55.55556%
+    &::after
+      content: ''
+      position: absolute
+      z-index: 1
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(0, 0, 0, 0.4)
+    &-heading
+      margin-bottom: 17px
+    &-text
+      margin-bottom: 8px
+    &-texts
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 2
+      padding: 52px 60px
+      color: #ffffff
+  &__btns
+    height: auto
+  @media (max-width: 1499.98px)
+    &__row
+      padding-bottom: 45px
+    &__item
+      padding: 0 30px 45px
+      margin-bottom: 45px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px 52px
+    &__item
+      margin-bottom: 0
+      padding: 45px 30px
+    &__main-item
+      &::before
+        padding-top: 55%
+  @media (max-width: 767.98px)
+    &__row
+      padding-bottom: 0
+    &__item
+      padding: 52px 60px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__main-item
+      &::before
+        display: none
+      &-texts
+        position: relative
+        padding: 60px 15px 30px
+    &__item
+      padding: 30px 15px

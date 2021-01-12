@@ -1,0 +1,41 @@
+.input
+  height: 90px
+  padding: 10px 30px
+  background-color: #ffffff
+  background-repeat: no-repeat
+  background-position: 30px center
+  font-size: 1.125em
+  &--small
+    height: 60px
+  &--dark
+    background-color: rgba(0, 0, 0, 0.3)
+    color: #ffffff
+    &::placeholder
+      color: rgba(255, 255, 255, 0.5)
+  &--yellow
+    background-color: $yellow-1
+  &--name
+    padding: 10px 30px 10px 60px
+    background-image: url(../img/name.svg)
+    &.input--dark
+      background-image: url(../img/name-2.svg)
+  &--tel
+    padding: 10px 30px 10px 60px
+    background-image: url(../img/tel.svg)
+    &.input--dark
+      background-image: url(../img/tel-2.svg)
+  @media (max-width: 1499.98px)
+    height: 72px
+    &--small
+      height: 60px
+  @media (max-width: 575.98px)
+    height: 60px
+
+
+.textarea
+  padding: 20px 30px 20px
+  font-size: 1.125em
+  &--yellow
+    background-color: $yellow-1
+  &--small
+    height: 161px

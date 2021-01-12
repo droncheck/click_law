@@ -1,0 +1,97 @@
+.details
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+    &--1
+      &::before
+        right: -1px
+        bottom: 0px
+        width: 33%
+        padding-top: 16.5%
+        background: url(../img/pattern-29.svg) no-repeat left bottom / 100%
+    &--2
+      &::before
+        top: -0.5px
+        right: -1px
+        width: 66%
+        padding-top: 50%
+        background: url(../img/pattern-30.svg) no-repeat left top / 100%
+    &--3
+      &::before
+        left: -1px
+        bottom: -1px
+        width: 60%
+        padding-top: 36%
+        background: url(../img/pattern-31.svg) no-repeat left bottom / 100%
+  &__grid
+    position: relative
+    top: auto
+    height: 120px
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+  &__item
+    display: flex
+    padding: 52px 60px
+    margin-top: -1px
+    &--small
+      padding: 45px 45px 45px 60px
+    &-icon
+      &-wrap
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex: 0 0 60px
+        max-width: 60px
+        margin-right: 25px
+    &-heading
+      margin-bottom: 20px
+  &__form
+    height: 100%
+    padding: 52px 60px
+    background: $yellow-2
+    &-heading
+      margin-bottom: 30px
+    &-btn
+      margin-bottom: 17px
+    &-text
+      color: $black-50
+  @media (max-width: 1499.98px)
+    &__grid
+      height: 90px
+    &__item,
+    &__form
+      padding: 45px 30px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px
+    &__form
+      padding: 52px 60px
+  @media (max-width: 767.98px)
+    &__item
+      padding: 52px 60px
+    &__form
+      &-heading
+        margin-bottom: 20px
+  @media (max-width: 575.98px)
+    &__grid
+      height: 60px
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__form
+      padding: 30px 15px
+    &__item
+      flex-wrap: wrap
+      padding: 30px 15px
+      &-icon
+        &-wrap
+          justify-content: flex-start
+          flex: 0 0 100%
+          max-width: 100%
+          margin-bottom: 15px

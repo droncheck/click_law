@@ -1,0 +1,120 @@
+.pricing
+  background: $yellow-2
+  &__grid
+    position: relative
+    top: auto
+    height: 120px
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      top: -1px
+      right: -1px
+      left: -1px
+      padding-top: 66%
+      background: url(../img/pattern-4.svg) no-repeat right top / 100%
+  &__heading
+    &-wrap
+      padding: 76px 60px 52px
+  &__empty-cell
+    height: 90px
+    align-self: flex-end
+  &__list
+    padding: 52px 30px 52px 60px
+    &-item
+      display: flex
+      align-items: center
+      flex: 0 0 100%
+      max-width: 100%
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+        .pricing__list-item-icon-wrap
+          &::before,
+          &::after
+            display: none
+      &-heading
+        margin-bottom: 0
+      &-icon
+        &-wrap
+          display: flex
+          justify-content: center
+          align-items: flex-start
+          position: relative
+          flex: 0 0 40px
+          max-width: 40px
+          margin-right: 19px
+          &::before,
+          &::after
+            content: ''
+            position: absolute
+            left: 50%
+            transform: translate(-50%, 0)
+            background: $yellow-4
+          &::before
+            bottom: -16px
+            width: 2px
+            height: 8px
+          &::after
+            bottom: -13px
+            width: 8px
+            height: 2px
+    &--alone
+      display: flex
+      align-items: center
+      height: 90px
+      padding: 15px 60px
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &-icon
+      margin-bottom: 36px
+    &-main
+      padding: 0 45px 52px 60px
+  @media (max-width: 1499.98px)
+    &__info
+      &-main
+        padding: 45px 30px
+    &__list
+      padding: 45px 30px
+      &--alone
+        padding: 15px 30px
+        height: 72px
+    &__empty-cell
+      height: 72px
+    &__grid
+      height: 90px
+    &__heading
+      &-wrap
+        padding: 52px 60px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__empty-cell
+      display: none
+  @media (max-width: 767.98px)
+    &__info
+      &-main
+        padding: 52px 60px
+    &__list
+      padding: 52px 60px
+      &--alone
+        padding: 15px 60px
+        height: auto
+  @media (max-width: 575.98px)
+    &__grid
+      height: 60px
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__info
+      &-icon
+        margin-bottom: 20px
+      &-main
+        padding: 30px 15px
+    &__list
+      padding: 30px 15px
+      &--alone
+        padding: 15px

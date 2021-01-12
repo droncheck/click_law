@@ -1,0 +1,76 @@
+.gains
+  background: $black
+  color: #ffffff
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      left: -1px
+    &--1
+      &::before
+        top: 0px
+        right: -1px
+        padding-top: 66%
+        background: url(../img/pattern-8.svg) no-repeat right top / 100%
+    &--2
+      &::before
+        top: 400px
+        width: 50%
+        padding-top: 66%
+        background: url(../img/pattern-9.svg) no-repeat left top / 100%
+  &__heading
+    &-wrap
+      padding: 82px 60px 52px
+  &__item
+    padding: 0 52px 52px 60px
+    margin-bottom: 60px
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      margin-bottom: 25px
+    &-icon
+      &-wrap
+        display: flex
+        align-items: flex-end
+        height: 60px
+        margin-bottom: 27px
+    &-heading
+      margin-bottom: 12px
+
+  @media (max-width: 1499.98px)
+    &__pattern
+      &--2
+        &::before
+          top: 316px
+    &__heading
+      &-wrap
+        padding: 52px 60px
+    &__item
+      padding: 0 30px 45px
+      margin-bottom: 45px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__items
+      padding-bottom: 15px
+    &__item
+      margin-bottom: 0
+      padding: 45px 30px
+      &:nth-last-child(1),
+      &:nth-last-child(2)
+        margin-bottom: 0
+  @media (max-width: 991.98px)
+    &__item
+      padding: 45px 30px
+  @media (max-width: 767.98px)
+    &__item
+      padding: 52px 60px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__item
+      padding: 30px 15px
+      &-icon
+        &-wrap
+          margin-bottom: 17px

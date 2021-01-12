@@ -1,0 +1,45 @@
+.video
+  display: block
+  position: relative
+  &::before
+    content: ''
+    display: block
+    padding-top: 55.55556%
+  &__cover
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 120px
+      height: 90px
+      opacity: 0.8
+      background-color: #333
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 27px
+      height: 32px
+      background: url(../img/play.svg) no-repeat center / 100%
+  &--small
+    .video__cover
+      &::before
+        width: 90px
+        height: 60px
+  @media (max-width: 575.98px)
+    &__cover
+      &::before
+        width: 90px
+        height: 60px

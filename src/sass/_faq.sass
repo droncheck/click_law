@@ -1,0 +1,81 @@
+.faq
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      left: -1px
+      bottom: -1px
+      width: 66%
+      padding-top: 34%
+      background: url(../img/pattern-18.svg) no-repeat left bottom / 100%
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+  &__row
+    margin-left: -15px
+    margin-right: -15px
+    &-wrap
+      position: relative
+      overflow: hidden
+  &__item
+    position: relative
+    height: 100%
+    &-wrap
+      padding-left: 15px
+      padding-right: 15px
+      margin-top: -1px
+      &:nth-child(3n)
+        .faq__item
+          border-right-style: none
+    &-img
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      &::before
+        content: ''
+        display: block
+        padding-top: 45%
+    &-texts
+      padding: 52px 60px
+      margin-right: 1px
+      background: $bg
+  &__footer
+    padding-bottom: 90px
+    margin-top: -1px
+    &--padding-bottom-0
+      padding-bottom: 0
+  @media (max-width: 1499.98px)
+    &__item
+      &-texts
+        padding: 45px 30px
+    &__footer
+      padding-bottom: 72px
+      &--padding-bottom-0
+        padding-bottom: 0
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px 52px
+    &__item
+      &-wrap
+        &:nth-child(3n)
+          .faq__item
+            border-right-style: solid
+  @media (max-width: 767.98px)
+    &__item
+      &-texts
+        padding: 52px 60px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__item
+      &-texts
+        padding: 30px 15px
+    &__footer
+      padding-bottom: 60px
+      &--padding-bottom-0
+        padding-bottom: 0

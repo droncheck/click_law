@@ -1,0 +1,56 @@
+.specialization
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      top: -1px
+      left: 0
+      right: -1px
+      transform: scale(-1, -1)
+      padding-top: 50%
+      background: url(../img/pattern-1.svg) no-repeat right bottom / 100%
+  &__heading
+    &-wrap
+      padding: 52px 60px
+  &__item
+    position: relative
+    display: flex
+    align-items: flex-start
+    padding: 60px 120px 90px 60px
+    &--color
+      &-white
+        color: #ffffff
+    &-texts,
+    &-icon
+      position: relative
+    &-bg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+    &-icon
+      flex: 0 0 60px
+      max-width: 60px
+      margin-right: 20px
+  @media (max-width: 1199.98px)
+    &__item
+      padding: 52px 60px
+    &__pattern
+      &::before
+        display: none
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__item
+      flex-wrap: wrap
+      padding: 30px 15px
+      &-icon
+        margin-bottom: 15px
+      &-texts
+        flex: 0 0 100%
+        max-width: 100%

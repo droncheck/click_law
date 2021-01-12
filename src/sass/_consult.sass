@@ -1,0 +1,60 @@
+.consult
+  background: $yellow-2
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      top: -1px
+      right: -1px
+    &--1
+      &::before
+        left: -1px
+        padding-top: 66%
+        background: url(../img/pattern-4.svg) no-repeat right top / 100%
+    &--2
+      &::before
+        width: 33.33333%
+        padding-top: 25%
+        background: url(../img/pattern-5.svg) no-repeat right top / 100%
+    &--2
+  &__heading
+    margin-bottom: 17px
+  &__texts
+    padding: 76px 60px 52px
+  &__icon
+    &-block
+      margin-top: 58px
+      align-self: baseline
+    &-wrap
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50%
+      padding: 30px
+      margin-left: auto
+      margin-right: auto
+      background: $yellow-2
+  &__form
+    padding-bottom: 50px
+    &-text
+      &-wrap
+        padding: 30px 60px
+  @media (max-width: 1499.98px)
+    &__texts
+      padding: 52px 60px
+    &__icon
+      &-block
+        margin-top: 46px
+  @media (max-width: 1199.98px)
+    &__form
+      padding-bottom: 22px
+  @media (max-width: 575.98px)
+    &__texts
+      padding: 30px 15px
+    &__form
+      padding-bottom: 0
+      &-text
+        &-wrap
+          padding-left: 15px
+          padding-right: 15px

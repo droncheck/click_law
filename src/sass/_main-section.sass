@@ -1,0 +1,135 @@
+.main
+  &__heading
+    max-width: 75%
+    margin-left: 60px
+  &__text
+    max-width: 40%
+    margin-left: 60px
+  &__info
+    max-width: 66.66667%
+    margin-left: 60px
+    margin-bottom: 25px
+    &-item
+      margin-bottom: 30px
+  &__heading
+    margin-bottom: 25px
+  &__text
+    margin-bottom: 50px
+  &__slide
+    transition: all 0.25s
+    opacity: 0
+    &.swiper-slide-active
+      opacity: 1
+  &__slider
+    padding-top: 50px
+    &-wrap
+      padding-top: 120px
+      padding-bottom: 70px
+    &-controls
+      margin-top: 30px
+    &-dots
+      margin-left: 60px
+      &-wrap
+        display: flex
+        align-items: center
+    &-arrow
+      &::before
+        padding-top: 66.66667%
+  &__btn
+    &-wrap
+      display: flex
+      align-items: center
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      bottom: -1px
+      left: -1px
+      right: -1px
+      padding-top: 50%
+      background: url(../img/pattern-1.svg) no-repeat right bottom / 100%
+  &__cover
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    width: calc(100% + (100vw - 1440px) / 2)
+    background-repeat: no-repeat
+    background-position: left center
+    background-size: cover
+    &::before
+      content: ''
+      position: absolute
+      top: 40px
+      left: 0
+      width: 1032px
+      height: 562px
+      background: url(../img/cover-logo.svg) no-repeat center / 100%
+  @media (max-width: 1499.98px)
+    &__heading,
+    &__info
+      max-width: unset
+      margin-right: 120px
+    &__text
+      max-width: 66.66667%
+      max-width: 50%
+    &__cover
+      width: calc(100% + (100vw - 1140px) / 2)
+  @media (max-width: 1199.98px)
+    &__slider
+      &-wrap
+        padding-top: 0px
+    &__cover
+      &-wrap
+        display: none
+  @media (max-width: 991.98px)
+    &__text
+      max-width: 66.66667%
+    &__pattern
+      &::before
+        display: none
+  @media (max-width: 767.98px)
+    &__heading,
+    &__text,
+    &__info
+      margin-right: 60px
+      max-width: 100%
+  @media (max-width: 575.98px)
+    &__grid
+      &-col
+        &:last-child
+          margin-left: auto
+          flex-basis: 60px
+          max-width: 60px
+    &__heading,
+    &__text,
+    &__info
+      margin-left: 15px
+      margin-right: 15px
+      margin-bottom: 30px
+    &__info
+      margin-bottom: 15px
+      &-item
+        margin-bottom: 15px
+    &__slider
+      padding-top: 30px
+      &-dots
+        margin-left: auto
+        margin-right: auto
+        &-wrap
+          flex: 0 0 calc(100% - 120px)
+          max-width: calc(100% - 120px)
+          padding-left: 15px
+          padding-right: 15px
+      &-arrow
+        &-wrap
+          flex-basis: 60px
+          max-width: 60px
+    &__btn
+      &-wrap
+        flex: 0 0 calc(100% - 60px)
+        max-width: calc(100% - 60px)
+
+        &:last-child
+          flex-basis: 60px
+          max-width: 60px

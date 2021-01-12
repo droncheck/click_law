@@ -1,0 +1,25 @@
+.breadcrumbs
+  &__list
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    padding: 20px 0 20px 60px
+    &-item
+      display: flex
+      margin: 4px 0
+      &::after
+        content: '/'
+        display: inline-block
+        margin: 0 9px
+        color: $text-gray
+      &:last-child
+        &::after
+          display: none
+  &__link
+    &:not([href])
+      border: none
+      color: $text-gray
+      pointer-events: none
+  @media (max-width: 575.98px)
+    &__list
+      padding: 20px 0 20px 15px
