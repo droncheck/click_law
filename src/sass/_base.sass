@@ -1,0 +1,70 @@
+.base
+  &__pattern
+    overflow: hidden
+    &::before
+      content: ''
+      position: absolute
+      bottom: -1px
+      right: -1px
+      left: -1px
+      padding-top: 50%
+      background: url(../img/pattern-1.svg) no-repeat right bottom / 100%
+  &__heading
+    &-wrap
+      padding: 52px 60px
+  &__filter
+    padding: 0 60px
+    &-item
+      margin-right: 45px
+      &:last-child
+        margin-right: 0
+    &-btn
+      position: relative
+      padding: 37px 10px
+      color: $text-gray
+      &.active
+        color: $text-black
+        &::after
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          height: 10px
+          background: $yellow-4
+  &__tags
+    padding: 20px 60px
+    &-item
+      margin: 10px 10px 10px 0
+    &-btn
+      padding: 8px 12px
+      border-radius: 3px
+      border: 1px solid $text-gray
+      color: $text-gray
+      &.active
+        border-color: $yellow-4
+        background: $yellow-4
+        color: $text-black
+      &--white
+        border-color: #ffffff
+        background: #ffffff
+        color: $text-black
+  &__main
+    position: relative
+  &__footer
+    padding-bottom: 120px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px
+    &__footer
+      padding-bottom: 90px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__footer
+      padding-bottom: 60px

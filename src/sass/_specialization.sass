@@ -4,22 +4,52 @@
       content: ''
       position: absolute
       top: -1px
-      left: 0
+      left: -1px
       right: -1px
-      transform: scale(-1, -1)
-      padding-top: 50%
-      background: url(../img/pattern-1.svg) no-repeat right bottom / 100%
+    &--1
+      &::before
+        transform: scale(-1, -1)
+        padding-top: 50%
+        background: url(../img/pattern-1.svg) no-repeat right top 1px / 100%
+    &--2
+      &::before
+        // width: calc(100% - 66.66667%)
+        height: 100%
+        background: url(../img/pattern-2.svg) no-repeat right top / contain
+    &--3
+      overflow: hidden
+      &::before
+        left: -1px
+        padding-top: 66%
+        background: url(../img/pattern-3.svg) no-repeat right top / 100%
   &__heading
     &-wrap
-      padding: 52px 60px
+      padding: 52px 45px 52px 60px
+  &__rows
+    position: relative
+  &__footer
+    padding-bottom: 120px
+  &__items
+    height: auto
+    &-wrap
+      position: relative
+    &:nth-child(even)
+      flex-direction: row-reverse
   &__item
     position: relative
     display: flex
     align-items: flex-start
     padding: 60px 120px 90px 60px
+    overflow: hidden
+    &:hover
+      .specialization__item-bg
+        transform: scale(1.5)
     &--color
       &-white
         color: #ffffff
+        &:hover,
+        &:focus
+          color: #ffffff
     &-texts,
     &-icon
       position: relative
@@ -32,17 +62,26 @@
       background-repeat: no-repeat
       background-position: center
       background-size: cover
+      transition: all 7.5s
     &-icon
       flex: 0 0 60px
       max-width: 60px
       margin-right: 20px
+  @media (max-width: 1499.98px)
+    &__footer
+      padding-bottom: 90px
   @media (max-width: 1199.98px)
+    &__items
+      &:nth-child(even)
+        flex-direction: row
     &__item
       padding: 52px 60px
     &__pattern
       &::before
         display: none
   @media (max-width: 575.98px)
+    &__footer
+      padding-bottom: 60px
     &__heading
       &-wrap
         padding: 30px 15px

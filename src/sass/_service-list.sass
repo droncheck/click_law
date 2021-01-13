@@ -1,0 +1,61 @@
+.service-list
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      bottom: -1px
+      right: -1px
+      width: 51%
+      padding-top: 26%
+      background: url(../img/pattern-1.svg) no-repeat right bottom / 100%
+  &__heading
+    &-wrap
+      padding: 52px 60px
+  &__subheading
+    &-wrap
+      padding: 30px 60px
+  &__item
+    display: flex
+    align-items: flex-start
+    padding: 45px 60px
+    line-height: 2
+    &-letter
+      flex: 0 0 50px
+      max-width: 50px
+    &-links
+      margin-top: 5px
+  &__link
+    display: block
+  @media (max-width: 1499.98px)
+    &__subheading
+      &-wrap
+        padding: 45px 30px
+    &__item
+      padding: 45px 30px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px
+  @media (max-width: 767.98px)
+    &__subheading
+      &-wrap
+        padding: 30px 60px
+    &__item
+      padding: 30px 60px
+      &-links
+        margin-top: 0
+      &-letter
+        flex-basis: 35px
+        max-width: 35px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__subheading
+      &-wrap
+        padding: 30px 15px
+    &__item
+      padding: 30px 15px
