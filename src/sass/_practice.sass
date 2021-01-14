@@ -11,32 +11,15 @@
   &__heading
     &-wrap
       padding: 112px 60px 52px
-  &__filter
-    position: relative
-    justify-content: space-around
-    &-wrap
-      position: relative
-      overflow: hidden
-    &-btn
-      position: relative
-      padding: 37px 0
-      color: $text-gray
-      &.active
-        color: $text-black
-        &::after
-          content: ''
-          position: absolute
-          bottom: 0
-          left: 0
-          right: 0
-          height: 10px
-          background: $yellow-4
   &__row
+    margin-bottom: -30px
     &-wrap
       position: relative
-      margin-top: -1px
   &__item
-    padding: 52px 60px 137px
+    padding: 52px 59px 137px
+    margin-top: -1px
+    margin-bottom: 30px
+    background: $bg
     &:nth-child(3n)
       border-right-style: none
     &-heading
@@ -102,22 +85,12 @@
     &__heading
       &-wrap
         padding: 52px 60px 52px
-    &__filter
-      &-btn
-        padding: 29px 0
-        font-size: 0.75em
     &__item
       &:nth-child(even)
         border-right-style: none
       &:nth-child(3n)
         border-right-style: solid
   @media (max-width: 991.98px)
-    &__filter
-      justify-content: flex-start
-      overflow-x: auto
-      &-item
-        padding-left: 15px
-        padding-right: 15px
     &__item
       &-date
         &::after

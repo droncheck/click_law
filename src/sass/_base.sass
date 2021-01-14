@@ -33,9 +33,9 @@
           height: 10px
           background: $yellow-4
   &__tags
-    padding: 20px 60px
+    padding: 25px 60px
     &-item
-      margin: 10px 10px 10px 0
+      margin: 5px 10px 5px 0
     &-btn
       padding: 8px 12px
       border-radius: 3px
@@ -49,10 +49,25 @@
         border-color: #ffffff
         background: #ffffff
         color: $text-black
+  &__docs
+    &-item
+      &-wrap
+        padding: 52px 60px
+        margin-top: -1px
   &__main
     position: relative
+    overflow: hidden
   &__footer
     padding-bottom: 120px
+  @media (max-width: 1499.98px)
+    &__filter
+      padding: 0 30px
+    &__tags
+      padding: 25px 30px
+    &__docs
+      &-item
+        &-wrap
+          padding: 45px 30px
   @media (max-width: 1199.98px)
     &__pattern
       &::before
@@ -62,9 +77,43 @@
         padding: 52px 60px
     &__footer
       padding-bottom: 90px
+    &__filter
+      &-btn
+        padding: 29px 0
+  @media (max-width: 991.98px)
+    &__filter
+      justify-content: flex-start
+      overflow-x: auto
+      padding: 0 15px
+      &-item
+        padding-left: 15px
+        padding-right: 15px
+        margin-right: 0
+      &-btn
+        padding-left: 0
+        padding-right: 0
+  @media (max-width: 767.98px)
+    &__filter
+      padding-left: 45px
+      padding-right: 45px
+    &__tags
+      padding-left: 60px
+      padding-right: 60px
+    &__docs
+      &-item
+        &-wrap
+          padding: 52px 60px
   @media (max-width: 575.98px)
     &__heading
       &-wrap
         padding: 30px 15px
+    &__filter
+      padding: 0
+    &__tags
+      padding: 25px 15px
+    &__docs
+      &-item
+        &-wrap
+          padding: 30px 15px
     &__footer
       padding-bottom: 60px

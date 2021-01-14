@@ -14,16 +14,19 @@
   &__row
     margin-left: -15px
     margin-right: -15px
+    margin-bottom: -30px
     &-wrap
       position: relative
       overflow: hidden
   &__item
     position: relative
     height: 100%
+
     &-wrap
       padding-left: 15px
       padding-right: 15px
       margin-top: -1px
+      margin-bottom: 30px
       &:nth-child(3n)
         .faq__item
           border-right-style: none
@@ -36,17 +39,31 @@
         display: block
         padding-top: 45%
     &-texts
+      min-height: calc(100% - 207px)
       padding: 52px 60px
       margin-right: 1px
       background: $bg
+  &__form
+    height: 100%
+    padding: 52px 60px
+    background: $yellow-2
+    &-heading
+      margin-bottom: 12px
+    &-btn
+      margin-bottom: 17px
+    &-text
+      color: $black-50
   &__footer
     padding-bottom: 90px
     margin-top: -1px
     &--padding-bottom-0
       padding-bottom: 0
   @media (max-width: 1499.98px)
+    &__form
+      padding: 45px 30px
     &__item
       &-texts
+        min-height: calc(100% - 162px)
         padding: 45px 30px
     &__footer
       padding-bottom: 72px
@@ -59,7 +76,11 @@
     &__heading
       &-wrap
         padding: 52px 60px 52px
+    &__form
+      padding: 52px 60px
     &__item
+      &-texts
+        min-height: auto
       &-wrap
         &:nth-child(3n)
           .faq__item
@@ -72,6 +93,8 @@
     &__heading
       &-wrap
         padding: 30px 15px
+    &__form
+      padding: 30px 15px
     &__item
       &-texts
         padding: 30px 15px

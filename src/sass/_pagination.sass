@@ -1,0 +1,55 @@
+.pagination
+  display: flex
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    flex: 0 0 60px
+    max-width: 60px
+    width: 60px
+    height: 60px
+    font-size: 1.25em
+    font-weight: 500
+    &--arrow
+      flex-basis: 85px
+      max-width: 85px
+      width: 85px
+    &.active,
+    &.disabled
+      color: $text-gray
+      path
+        fill: $text-gray
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 60px
+    background: $bg
+  @media (max-width: 767.98px)
+    &__item
+      flex-basis: 40px
+      width: 40px
+      max-width: 40px
+      height: 40px
+      font-size: 16px
+      &--arrow
+        flex-basis: 60px
+        max-width: 60px
+        width: 60px
+        svg
+          width: 10px
+          height: 16px
+  @media (max-width: 575.98px)
+    &__wrap
+      padding: 30px 15px
+  @media (max-width: 349.98px)
+    &__item
+      flex-basis: 30px
+      width: 30px
+      max-width: 30px
+      height: 30px
+      font-size: 14px
+      &--arrow
+        flex-basis: 50px
+        max-width: 50px
+        width: 50px
