@@ -21,3 +21,25 @@ export function initAccordions() {
     });
   });
 }
+
+export function initFileInputs() {
+  const $labels = document.querySelectorAll('.file');
+
+
+  $labels.forEach($label => {
+    const placeholder = $label.dataset.placeholder ?
+        $label.dataset.placeholder :
+        'Прикрепить файл';
+    const $input = $label.querySelector('input');
+    const $name = $label.querySelector('.file__label');
+    let value = '';
+
+    $input.addEventListener('change', () => {
+      value = $input.value.split(/(\\|\/)/g).pop();
+
+      value === '' ?
+          $name.textContent = placeholder :
+          $name.textContent = value;
+    });
+  });
+}

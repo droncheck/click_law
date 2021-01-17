@@ -46,6 +46,7 @@
     &-img
       margin-bottom: 10px
   &__block
+    position: relative
     padding: 52px 60px
     &-heading
       display: block
@@ -56,6 +57,22 @@
       transition: color 0.25s
       &:hover
         color: $yellow-2
+    &-socials
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      &-item
+        border-right: 1px solid $black
+        &:last-child
+          border: none
+      &-link
+        display: block
+        height: 60px
+        background-repeat: no-repeat
+        background-position: center
+    &:last-child
+      padding-bottom: 120px
   &__info-block
     padding: 15px 60px
   @media (max-width: 1499.98px)
@@ -69,6 +86,8 @@
       padding: 45px 30px
     &__block
       padding: 45px 30px
+      &:last-child
+        padding-bottom: 105px
     &__info-block
       padding: 15px 30px
   @media (max-width: 1199.98px)
@@ -93,6 +112,8 @@
       padding: 30px 15px
     &__block
       padding: 30px 15px
+      &:last-child
+        padding-bottom: 90px
     &__info-block
       padding: 0
       line-height: 2

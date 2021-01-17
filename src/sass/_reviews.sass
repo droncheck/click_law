@@ -13,13 +13,21 @@
     &-wrap
       padding: 76px 60px 52px
   &__row
+    margin-bottom: -30px
     &-wrap
       position: relative
-      margin-top: -1px
   &__item
+    position: relative
     padding: 52px 60px 137px
-    &:nth-child(3n)
-      border-right-style: none
+    margin-top: -1px
+    margin-bottom: 30px
+    background: $bg
+    &--margin-0
+      margin: 0
+    &--height-100
+      height: 100%
+    &--yellow
+      background: $yellow-2
     &-heading
       margin-bottom: 0
       margin-right: 24px
@@ -46,8 +54,12 @@
       &-sum
         &::after
           content: '\00a0\20BD'
+    &.border--right
+      &:nth-child(3n)
+        border-right-style: none
   &__footer
     padding-bottom: 120px
+    background: $yellow-2
   @media (max-width: 1499.98px)
     &__heading
       &-wrap
@@ -65,14 +77,18 @@
       &-wrap
         padding: 52px 60px 52px
     &__item
-      &:nth-child(even)
-        border-right-style: none
-      &:nth-child(3n)
-        border-right-style: solid
+      &.border--right
+        &:nth-child(3n)
+          border-right-style: solid
+        &:nth-child(2n)
+          border-right-style: none
   @media (max-width: 767.98px)
     &__item
       padding: 52px 60px 119px
-      border-right-style: none
+      &.border--right
+        border-right-style: none
+        &:nth-child(3n)
+          border-right-style: none
       &-footer
         bottom: 52px
         left: 60px

@@ -1,0 +1,280 @@
+.article
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      right: -1px
+      bottom: -1px
+      width: 66%
+      padding-top: 33%
+      background: url(../img/pattern-34.svg) no-repeat right bottom / 100%
+  &__heading
+    &-wrap
+      padding: 72px 60px 17px
+  &__btn
+    padding: 8px 12px
+    border-radius: 3px
+    border-color: #fff
+    background: #fff
+    color: $text-black
+  &__news
+    padding: 52px 60px
+    &-heading
+      margin-bottom: 24px
+    &-item
+      display: block
+    &-more-btn
+      display: inline-block
+      margin-top: 15px
+  &__main
+    padding: 0 60px
+    &-info
+      align-items: center
+      margin-bottom: 14px
+      &-block
+        position: relative
+        padding-right: 10px
+        margin-right: 10px
+        margin-bottom: 10px
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          width: 1px
+          background: $border
+        &:last-child
+          margin-right: 0
+    &-date
+      padding: 8px 12px
+      border-radius: 3px
+      background: $yellow-2
+    &-tags
+      margin-bottom: 0
+      &::after
+        bottom: 10px
+    &-tag
+      padding: 8px 12px
+      margin-right: 10px
+      margin-bottom: 10px
+      border-radius: 3px
+      border: 1px solid $text-gray
+      color: $text-gray
+      &:last-child
+        margin-right: 0
+    &-counter
+      padding-left: 18px
+      margin-right: 20px
+      background-repeat: no-repeat
+      background-position: left center
+      background-size: 11px auto
+      &:last-child
+        margin-right: 0
+    &-block
+      margin-bottom: 50px
+    &-text
+      margin-bottom: 24px
+    &-list
+      padding-left: 20px
+      margin-bottom: 24px
+      &-item
+        position: relative
+        padding-left: 13px
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
+        &::before
+          content: ''
+          position: absolute
+          top: 6px
+          left: 0
+          width: 4px
+          height: 4px
+          border-radius: 50%
+          background: $text-black
+    &-heading
+      margin-bottom: 20px
+  &__footer
+    align-items: center
+    justify-content: space-between
+    padding: 0 60px 60px
+    height: auto
+  &__autor
+    display: flex
+    align-items: center
+    &-img
+      flex: 0 0 90px
+      max-width: 90px
+      height: 90px
+      margin-right: 20px
+      border-radius: 50%
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+    &-name
+      margin-bottom: 10px
+    &-post
+      color: $black-50
+      font-size: 14px
+  &__share
+    display: flex
+    align-items: center
+    padding-left: 32px
+    background: url(../img/share.svg) no-repeat left center / 19px 20px
+    &-wrap
+      display: flex
+      justify-content: flex-end
+    &-item
+      position: relative
+      flex: 0 0 30px
+      max-width: 30px
+      width: 30px
+      height: 30px
+      margin-right: 5px
+      &:last-child
+        margin-right: 0
+    &-btn
+      position: absolute
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+  &__comments
+    padding: 52px 60px 60px
+    &-more-btn
+      margin-left: 80px
+    &-header
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      margin-bottom: 20px
+      &-btn
+        margin-bottom: 14px
+    &-heading
+      margin-bottom: 14px
+      margin-right: 20px
+    &-item
+      display: flex
+      margin-bottom: 20px
+      &-img
+        flex: 0 0 60px
+        max-width: 60px
+        width: 60px
+        height: 60px
+        margin-right: 20px
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+      &-texts
+        flex: 0 0 calc(100% - 80px)
+        max-width: calc(100% - 80px)
+        padding-top: 8px
+        padding-bottom: 26px
+      &-header
+        display: flex
+        align-items: center
+        justify-content: space-between
+      &-name
+        margin-bottom: 12px
+      &-date
+        margin-bottom: 12px
+        color: $black-50
+  @media (max-width: 1499.98px)
+    // &__heading
+    //   &-wrap
+    //     padding-left: 30px
+    //     padding-right: 30px
+    &__news
+      padding: 45px 30px
+    &__main
+      padding: 0 30px
+      &-block
+        margin-bottom: 45px
+    &__footer
+      padding: 0 30px 45px
+    &__autor
+      &-img
+        flex-basis: 60px
+        max-width: 60px
+        width: 60px
+        height: 60px
+    &__comments
+      padding: 45px 30px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
+    &__heading
+      &-wrap
+        padding: 52px 60px 17px
+    &__news
+      padding: 0px 60px 52px
+      &-more-btn
+        margin-top: 0
+    &__main
+      padding: 0 60px
+    &__footer
+      padding: 0 60px 60px
+    &__comments
+      padding: 52px 60px 60px
+  @media (max-width: 767.98px)
+    &__main
+      &-info
+        justify-content: space-between
+        &-block
+          padding: 0
+          &::after
+            display: none
+          &:nth-child(2)
+            order: 1
+      &-block
+        margin-bottom: 24px
+      &-text
+        margin-bottom: 17px
+      &-list
+        margin-bottom: 17px
+    &__share
+      &-wrap
+        justify-content: flex-start
+        padding-top: 20px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px 17px
+    &__news
+      padding: 0px 15px 30px
+    &__main
+      padding: 0 15px
+      &-list
+        padding-left: 10px
+    &__footer
+      padding: 0 15px 30px
+    &__autor
+      align-items: flex-start
+      &-img
+        flex-basis: 40px
+        max-width: 40px
+        width: 40px
+        height: 40px
+        margin-right: 15px
+      &-texts
+        flex-basis: calc(100% - 55px)
+        max-width: calc(100% - 55px)
+    &__comments
+      padding: 30px 15px 30px
+      &-more-btn
+        margin-left: 55px
+      &-item
+        &-img
+          flex-basis: 40px
+          max-width: 40px
+          width: 40px
+          height: 40px
+          margin-right: 15px
+        &-texts
+          flex-basis: calc(100% - 55px)
+          max-width: calc(100% - 55px)
+          padding-top: 0
+          padding-bottom: 17px

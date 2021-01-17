@@ -20,7 +20,9 @@
     &-wrap
       padding: 112px 60px 52px
   &__row
-    padding-bottom: 60px
+    padding-bottom: 120px
+    &--padding-bottom-0
+      padding-bottom: 0
   &__item
     padding: 0 52px 52px 60px
     margin-bottom: 52px
@@ -29,6 +31,7 @@
     &:nth-last-child(1),
     &:nth-last-child(2)
       margin-bottom: 0
+      padding-bottom: 0
   &__main-item
     position: relative
     background-repeat: no-repeat
@@ -67,7 +70,9 @@
     height: auto
   @media (max-width: 1499.98px)
     &__row
-      padding-bottom: 45px
+      padding-bottom: 105px
+      &--padding-bottom-0
+        padding-bottom: 0
     &__item
       padding: 0 30px 45px
       margin-bottom: 45px
@@ -78,9 +83,16 @@
     &__heading
       &-wrap
         padding: 52px 60px 52px
+    &__row
+      padding-bottom: 45px
+      &--padding-bottom-0
+        padding-bottom: 0
     &__item
       margin-bottom: 0
       padding: 45px 30px
+      &:nth-last-child(1),
+      &:nth-last-child(2)
+        padding-bottom: 45px
     &__main-item
       &::before
         padding-top: 55%
@@ -89,6 +101,9 @@
       padding-bottom: 0
     &__item
       padding: 52px 60px
+      &:nth-last-child(1),
+      &:nth-last-child(2)
+        padding-bottom: 52px
   @media (max-width: 575.98px)
     &__heading
       &-wrap
@@ -101,3 +116,6 @@
         padding: 60px 15px 30px
     &__item
       padding: 30px 15px
+      &:nth-last-child(1),
+      &:nth-last-child(2)
+        padding-bottom: 30px

@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Кликправо | Тарифы</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.png">
+  <!-- <meta property="og:image" content="images/dest/preview.jpg"> -->
+  <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="row header__row">
+        <div class="row grid">
+          <div class="col-12 border border--left border--right"></div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-3 col-2 border border--right border-md--right-none header__logo-wrap">
+          <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="Img" class="header__logo-img">
+            <span class="header__logo-caption heading heading--font-size-34">
+              Кликправо
+            </span>
+          </a>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-9 col-8 header__info">
+          <div class="row">
+            <div class="col-lg-4 col-md-3 border border--bottom border-md--bottom-none header__select-wrap">
+              <label class="header__select-label small">
+                <span class="header__select-caption">Ваш город:</span>
+                <select class="header__select">
+                  <option value="Москва">Москва</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Другой">Другой</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-4 col-10 border border--right border--bottom border-md--bottom-none border-sm--right-none header__phone-wrap">
+              <a href="tel:+78007779698" class="caps header__phone">+7 (800)777-96-98</a>
+              <a href="tel:+78452674922" class="caps header__phone">+7 (8452) 674-922</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 col-2 header__btns">
+              <div class="row">
+                <div class="col-lg-10 col-md-8 col-sm-10 header__btn-wrap">
+                  <button class="btn btn--yellow btn--small caps small header__btn border border--bottom border-md--bottom-none border-sm--left" data-popup-btn="recall">
+                    <img src="img/recall.png" alt="" class="btn__icon header__btn-icon img-responsive">
+                    ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+                  </button>
+                </div>
+                <div class="col-md-2 header__search-btn-wrap">
+                  <button class="btn btn--icon btn--transparent border border--bottom border--left border-md--bottom-none header__btn" style="background-image: url(img/search.svg);">
+                    Поиск
+                  </button>
+                </div>
+                <div class="col-sm-2 d-lg-none">
+                  <button class="btn btn--icon btn--transparent border border--left header__btn header__burger" data-mobile-menu-open="true">
+                    <span class="header__burger-icon">
+                      <span class="header__burger-line"></span>
+                      <span class="header__burger-line"></span>
+                      <span class="header__burger-line"></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 header__nav-wrap">
+              <nav class="header__nav border">
+                <ul class="header__nav-list">
+                  <li class="header__nav-list-item">
+                    <div class="header__nav-link header__nav-link--dropdown" data-dropdown-open="1">
+                      Банкротство
+                      <svg class="header__nav-link-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6px" height="3px">
+                        <path fill-rule="evenodd"  fill="rgb(51, 51, 63)"
+                        d="M5.197,0.110 L3.000,2.088 L0.804,0.110 C0.620,-0.037 0.321,-0.037 0.138,0.110 C-0.046,0.258 -0.046,0.496 0.138,0.644 L2.643,2.892 C2.742,2.971 2.872,3.005 3.000,2.999 C3.129,3.005 3.259,2.971 3.356,2.892 L5.862,0.644 C6.046,0.496 6.046,0.258 5.862,0.110 C5.678,-0.037 5.381,-0.037 5.197,0.110 Z"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <div class="header__nav-link header__nav-link--dropdown" data-dropdown-open="2">
+                      Юридические услуги
+                      <svg class="header__nav-link-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="6px" height="3px">
+                        <path fill-rule="evenodd"  fill="rgb(51, 51, 63)"
+                        d="M5.197,0.110 L3.000,2.088 L0.804,0.110 C0.620,-0.037 0.321,-0.037 0.138,0.110 C-0.046,0.258 -0.046,0.496 0.138,0.644 L2.643,2.892 C2.742,2.971 2.872,3.005 3.000,2.999 C3.129,3.005 3.259,2.971 3.356,2.892 L5.862,0.644 C6.046,0.496 6.046,0.258 5.862,0.110 C5.678,-0.037 5.381,-0.037 5.197,0.110 Z"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#" class="header__nav-link">Тарифы</a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#" class="header__nav-link">База-знаний</a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#" class="header__nav-link">Судебная практика</a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#" class="header__nav-link">О компании</a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#" class="header__nav-link">Отзывы</a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#" class="header__nav-link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="dropdown-menu" data-dropdown-parent="true">
+    <svg class="dropdown-menu__triangle"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="16px" height="10px">
+      <path fill-rule="evenodd"  fill="rgb(221, 221, 221)"
+      d="M16.000,10.000 L8.000,-0.000 L0.000,10.000 L16.000,10.000 Z"/>
+    </svg>
+    <div class="container dropdown-menu__container">
+      <div class="dropdown-menu__row-wrap">
+        <div class="row grid">
+          <div class="col-lg-3 border border--dark border--left border--right dropdown-menu__pattern"></div>
+          <div class="col-lg-3 border border--dark border--right"></div>
+          <div class="col-lg-6 border border--dark border--right"></div>
+        </div>
+        <div class="row dropdown-menu__row" data-dropdown-menu="1">
+          <div class="dropdown-menu__tabs-wrap col-lg-9 row" data-dropdown-tabs-parent>
+            <div class="col-lg-4 dropdown-menu__pills">
+              <div class="dropdown-menu__pills-item heading heading--font-size-20 font-weight-500 border border--dark border--bottom active" data-dropdown-pill="1">
+                Банкротство физических лиц
+              </div>
+              <div class="dropdown-menu__pills-item heading heading--font-size-20 font-weight-500" data-dropdown-pill="2">
+                Банкротство юридических лиц
+              </div>
+            </div>
+            <div class="col-lg-8 dropdown-menu__tab row active" data-dropdown-tab="1">
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по административным делам</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по договору подряда</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по таможенному праву</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подача аппеляций в арбитражный суд</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Арбитражный адвокат</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Аутсорсинг юридических услуг</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание дебиторской задолженности</a>
+                </li>
+              </ul>
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание долгов с юридических лиц</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Защита товарного знака и бренда</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Ведение кадрового аутсорсинга</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Корпоративный юрист</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Налоговый юрист</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-8 dropdown-menu__tab row" data-dropdown-tab="2">
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по административным делам 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по договору подряда 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по таможенному праву 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подача аппеляций в арбитражный суд 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Арбитражный адвокат 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Аутсорсинг юридических услуг 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание дебиторской задолженности 2</a>
+                </li>
+              </ul>
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание долгов с юридических лиц 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Защита товарного знака и бренда 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Ведение кадрового аутсорсинга 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Корпоративный юрист 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Налоговый юрист 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row dropdown-menu__row" data-dropdown-menu="2">
+          <div class="dropdown-menu__tabs-wrap col-lg-9 row" data-dropdown-tabs-parent>
+            <div class="col-lg-4 dropdown-menu__pills">
+              <div class="dropdown-menu__pills-item heading heading--font-size-20 font-weight-500 border border--dark border--bottom active" data-dropdown-pill="1">
+                Юридичекие услуги для бизнеса
+              </div>
+              <div class="dropdown-menu__pills-item heading heading--font-size-20 font-weight-500" data-dropdown-pill="2">
+                Юридичекие услуги для граждан
+              </div>
+            </div>
+            <div class="col-lg-8 dropdown-menu__tab row active" data-dropdown-tab="1">
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по административным делам</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по договору подряда</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по таможенному праву</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подача аппеляций в арбитражный суд</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Арбитражный адвокат</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Аутсорсинг юридических услуг</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание дебиторской задолженности</a>
+                </li>
+              </ul>
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание долгов с юридических лиц</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Защита товарного знака и бренда</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Ведение кадрового аутсорсинга</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Корпоративный юрист</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Налоговый юрист</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-8 dropdown-menu__tab row" data-dropdown-tab="2">
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по административным делам 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по договору подряда 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Адвокат по таможенному праву 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подача аппеляций в арбитражный суд 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Арбитражный адвокат 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Аутсорсинг юридических услуг 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание дебиторской задолженности 2</a>
+                </li>
+              </ul>
+              <ul class="col-lg-6 dropdown-menu__tab-list">
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Взыскание долгов с юридических лиц 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Защита товарного знака и бренда 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Ведение кадрового аутсорсинга 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Корпоративный юрист 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Налоговый юрист 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров 2</a>
+                </li>
+                <li class="dropdown-menu__tab-list-item">
+                  <a href="#" class="link">Подготовка и составление договоров 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu__container">
+      <div class="mobile-menu__accordion" data-accordion>
+        <div data-accordion-header class="mobile-menu__accordion-header heading heading--font-size-20 font-weight-500">
+          Банкротство
+        </div>
+        <div data-accordion-hidden class="mobile-menu__accordion-hidden">
+          <div class="mobile-menu__accordion" data-accordion>
+            <div data-accordion-header class="mobile-menu__accordion-header heading heading--font-size-20 font-weight-500">
+              Банкротство физических лиц
+            </div>
+            <div data-accordion-hidden class="mobile-menu__accordion-hidden">
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по административным делам
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по договору подряда
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по таможенному праву
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Подача аппеляций в арбитражный суд
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Арбитражный адвокат
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Аутсорсинг юридических услуг
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Взыскание дебиторской задолженности
+              </a>
+            </div>
+          </div>
+          <div class="mobile-menu__accordion" data-accordion>
+            <div data-accordion-header class="mobile-menu__accordion-header heading heading--font-size-20 font-weight-500">
+              Банкротство юридических лиц
+            </div>
+            <div data-accordion-hidden class="mobile-menu__accordion-hidden">
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по административным делам
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по договору подряда
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по таможенному праву
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Подача аппеляций в арбитражный суд
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Арбитражный адвокат
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Аутсорсинг юридических услуг
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Взыскание дебиторской задолженности
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu__accordion" data-accordion>
+        <div data-accordion-header class="mobile-menu__accordion-header heading heading--font-size-20 font-weight-500">
+          Юридичекие услуги
+        </div>
+        <div data-accordion-hidden class="mobile-menu__accordion-hidden">
+          <div class="mobile-menu__accordion" data-accordion>
+            <div data-accordion-header class="mobile-menu__accordion-header heading heading--font-size-20 font-weight-500">
+              Юридичекие услуги для бизнеса
+            </div>
+            <div data-accordion-hidden class="mobile-menu__accordion-hidden">
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по административным делам
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по договору подряда
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по таможенному праву
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Подача аппеляций в арбитражный суд
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Арбитражный адвокат
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Аутсорсинг юридических услуг
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Взыскание дебиторской задолженности
+              </a>
+            </div>
+          </div>
+          <div class="mobile-menu__accordion" data-accordion>
+            <div data-accordion-header class="mobile-menu__accordion-header heading heading--font-size-20 font-weight-500">
+              Юридичекие услуги для граждан
+            </div>
+            <div data-accordion-hidden class="mobile-menu__accordion-hidden">
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по административным делам
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по договору подряда
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Адвокат по таможенному праву
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Подача аппеляций в арбитражный суд
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Арбитражный адвокат
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Аутсорсинг юридических услуг
+              </a>
+              <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+                Взыскание дебиторской задолженности
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+        Тарифы
+      </a>
+      <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+        База-знаний
+      </a>
+      <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+        Судебная практика
+      </a>
+      <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+        О компании
+      </a>
+      <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+        Отзывы
+      </a>
+      <a href="#" class="mobile-menu__item heading heading--font-size-20 font-weight-500">
+        Контакты
+      </a>
+    </div>
+  </div>
+
+  <main class="content">
+
+    <section class="section breadcrumbs">
+      <div class="container breadcrumbs__container">
+        <div class="row breadcrumbs__row">
+          <div class="row grid">
+            <div class="col-lg-6 border border--bottom border--left border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--bottom border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--bottom border--right"></div>
+          </div>
+          <div class="col-lg-6 breadcrumbs__list-wrap">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item small">
+                <a href="#" class="link breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__list-item small">
+                <a href="#" class="link breadcrumbs__link">Путь до текущей страницы</a>
+              </li>
+              <li class="breadcrumbs__list-item small">
+                <a class="link breadcrumbs__link">Страница</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section base">
+      <div class="container base__container">
+        <div class="row base__header">
+          <div class="row grid">
+            <div class="col-lg-9 border border--left border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right base__pattern"></div>
+          </div>
+          <div class="col-lg-9 base__heading-wrap">
+            <h1 class="heading heading--font-size-60 base__heading">
+              Выгодные предложения
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing">
+      <div class="container pricing__container">
+        <div class="row pricing__heading">
+          <div class="row grid">
+            <div class="col-lg-6 border border--yellow border--bottom border--left border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--yellow border--bottom border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--yellow border--right"></div>
+          </div>
+          <div class="col-lg-6 pricing__heading-wrap">
+            <h2 class="heading heading--font-size-40 pricing__heading">
+              Из чего складывается цена?
+            </h2>
+          </div>
+        </div>
+        <div class="row pricing__row">
+          <div class="row grid">
+            <div class="col-sm-6 border border--yellow border--left border--right"></div>
+            <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--yellow border--right pricing__pattern"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--yellow border--right"></div>
+          </div>
+          <div class="col-lg-6 col-sm-6 pricing__list-wrap">
+            <ul class="pricing__list">
+              <li class="pricing__list-item">
+                <div class="pricing__list-item-icon-wrap">
+                  <img src="img/pricing__list-item-icon-1.png" alt="" class="pricing__list-item-icon">
+                </div>
+                <div class="pricing__list-item-texts">
+                  <div class="heading heading--font-size-20 font-weight-500 pricing__list-item-heading">
+                    Подготовка и подача документов в суд
+                  </div>
+                </div>
+              </li>
+              <li class="pricing__list-item">
+                <div class="pricing__list-item-icon-wrap">
+                  <img src="img/pricing__list-item-icon-2.png" alt="" class="pricing__list-item-icon">
+                </div>
+                <div class="pricing__list-item-texts">
+                  <div class="heading heading--font-size-20 font-weight-500 pricing__list-item-heading">
+                    Участие в судебных заседаниях
+                  </div>
+                </div>
+              </li>
+              <li class="pricing__list-item">
+                <div class="pricing__list-item-icon-wrap">
+                  <img src="img/pricing__list-item-icon-3.png" alt="" class="pricing__list-item-icon">
+                </div>
+                <div class="pricing__list-item-texts">
+                  <div class="heading heading--font-size-20 font-weight-500 pricing__list-item-heading">
+                    Финансовое управление и взаимодействие с кредиторами
+                  </div>
+                </div>
+              </li>
+              <li class="pricing__list-item">
+                <div class="pricing__list-item-icon-wrap">
+                  <img src="img/pricing__list-item-icon-4.png" alt="" class="pricing__list-item-icon">
+                </div>
+                <div class="pricing__list-item-texts">
+                  <div class="heading heading--font-size-20 font-weight-500 pricing__list-item-heading">
+                    Подача апелляционных и кассационных жалоб
+                  </div>
+                  <div class="pricing__list-item-caption">
+                    (при необходимости)
+                  </div>
+                </div>
+              </li>
+              <li class="pricing__list-item">
+                <div class="pricing__list-item-icon-wrap">
+                  <img src="img/pricing__list-item-icon-5.png" alt="" class="pricing__list-item-icon">
+                </div>
+                <div class="pricing__list-item-texts">
+                  <div class="heading heading--font-size-20 font-weight-500 pricing__list-item-heading">
+                    Доведение процедуры банкротства до успешного результата
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="pricing__list pricing__list--alone border border--yellow border--top border--bottom">
+              <li class="pricing__list-item">
+                <div class="pricing__list-item-icon-wrap">
+                  <img src="img/pricing__list-item-icon-6.png" alt="" class="pricing__list-item-icon">
+                </div>
+                <div class="pricing__list-item-texts">
+                  <div class="heading heading--font-size-20 font-weight-500 pricing__list-item-heading">
+                    Защита от коллекторов — в ПОДАРОК!
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 border border--yellow border--top border--bottom pricing__empty-cell"></div>
+          <div class="col-lg-3 col-sm-6 pricing__info">
+            <div class="pricing__info-main">
+              <img src="img/pricing__info-icon.png" alt="" class="pricing__info-icon">
+              <div class="pricing__info-text">
+                Процедурами банкротства в управляет компьютерная система собственной разработки. Тотальная автоматизация процессов позволяет нам снизить затраты и установить лучшие % в&nbsp;регионах.
+              </div>
+            </div>
+            <button class="btn caps btn--yellow-2 pricing__info-btn border border--yellow border--top border--left border--right border--bottom">
+              РАСЧИТАТЬ СТОИМОСТЬ УСЛУГИ
+            </button>
+          </div>
+        </div>
+        <div class="row grid pricing__grid">
+          <div class="col-lg-3 col-sm-6 border border--yellow border--left border--right"></div>
+          <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--yellow border--right"></div>
+          <div class="col-lg-3 d-lg-block d-none border border--yellow border--right"></div>
+          <div class="col-lg-3 d-lg-block d-none border border--yellow border--right"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tariffs">
+      <div class="container tariffs__container">
+        <div class="row tariffs__header">
+          <div class="row grid">
+            <div class="col-lg-6 border border--left border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+          </div>
+          <div class="col-lg-6 tariffs__heading-wrap">
+            <h2 class="heading heading--font-size-40 tariffs__heading">
+              Наши тарифы
+            </h2>
+          </div>
+        </div>
+        <ul class="d-flex filter tariffs__filter border border--top border--left border--right">
+          <li class="col-auto filter__item">
+            <button class="filter__btn caps active">
+              ЭКОНОМ
+            </button>
+          </li>
+          <li class="col-auto filter__item">
+            <button class="filter__btn caps">
+              СТАНДАРТ
+            </button>
+          </li>
+          <li class="col-auto filter__item">
+            <button class="filter__btn caps">
+              ЭКСКЛЮЗИВ
+            </button>
+          </li>
+        </ul>
+        <div class="tariffs__main">
+          <div class="row grid">
+            <div class="col-12 border border--left border--right border--top border--bottom"></div>
+          </div>
+          <div class="heading heading--font-size-30 tariffs__main-heading">
+            Сумма долгов до 700 000 ₽
+          </div>
+          <div class="tariffs__table">
+            <div class="row tariffs__table-header">
+              <div class="col-sm-4 tariffs__table-cell"></div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="tariffs__table-header-text">
+                  Базовая стоимость
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell"></div>
+            </div>
+            <div class="row tariffs__table-row border border--bottom">
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  Аванс
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                  7 500
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  при заключении договора
+                </div>
+              </div>
+            </div>
+            <div class="row tariffs__table-row border border--bottom">
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  Нотариальная доверенность
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                  2 000
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  при заключении договора
+                </div>
+              </div>
+            </div>
+            <div class="row tariffs__table-row border border--bottom">
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  1 месяц
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                  12 800
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  г/пошлина +50% депозита в суд
+                </div>
+              </div>
+            </div>
+            <div class="row tariffs__table-row border border--bottom">
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  2 месяца
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                  7 500 ₽
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  50% депозита в суд
+                </div>
+              </div>
+            </div>
+            <div class="row tariffs__table-row border border--bottom">
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  3 месяца
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                  7 500 ₽
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  ежемесячный платеж
+                </div>
+              </div>
+            </div>
+            <div class="row tariffs__table-row border border--bottom">
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  4 месяца
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                  7 500 ₽
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                  ежемесячный платеж
+                </div>
+              </div>
+            </div>
+            <div class="row tariffs__table-footer">
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="tariffs__table-footer-text heading heading--font-size-30">
+                  Всего:
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="tariffs__table-footer-text heading heading--font-size-30 tariffs__table-cell-price">
+                  87 500
+                </div>
+              </div>
+              <div class="col-sm-4 tariffs__table-cell">
+                <div class="tariffs__table-footer-text heading heading--font-size-30">
+                  ≈12.5% от суммы ваших долгов
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn tariffs__main-btn caps border border--left border--right border--top border--bottom">
+            ОФОРМИТЬ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section disconts">
+      <div class="container disconts__container">
+        <div class="row disconts__header">
+          <div class="row grid">
+            <div class="col-lg-6 border border--left border--right"></div>
+            <div class="col-lg-3 border border--right d-lg-block d-none"></div>
+            <div class="col-lg-3 border border--right d-lg-block d-none disconts__pattern"></div>
+          </div>
+          <div class="col-lg-6 disconts__heading-wrap">
+            <h2 class="heading heading--font-size-40 disconts__heading">
+              Акции
+            </h2>
+          </div>
+        </div>
+        <div class="disconts__main">
+          <div class="row grid">
+            <div class="col-lg-3 col-sm-6 border border--left border--right"></div>
+            <div class="col-lg-3 col-sm-6 border border--right d-sm-block d-none"></div>
+            <div class="col-lg-3 border border--right d-lg-block d-none"></div>
+            <div class="col-lg-3 border border--right d-lg-block d-none"></div>
+          </div>
+          <div class="disconts__items">
+            <div class="row disconts__item border border--top border--bottom">
+              <div class="col-lg-6 disconts__item-img" style="background-image: url(img/disconts__item-img-1.jpg);"></div>
+              <div class="col-lg-6 disconts__item-texts">
+                <div class="disconts__item-main">
+                  <div class="heading heading--font-size-30 disconts__item-heading">
+                    Законная рассрочка
+                  </div>
+                  <ul class="disconts__item-tags row">
+                    <li class="col-auto disconts__item-tags-item">
+                      <a href="#" class="col-auto disconts__item-tags-btn micro caps">
+                        #БАНКРОТСТВО ФИЗИЧЕСКИХ И ЮРИДИЧЕСКИХ ЛИЦ
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="disconts__item-text">
+                    Услуга позволяет быстро вмешаться, остановить процесс продажи залога (ипотечного жилья) и получить передышку в платежах. Момент продажи жилья на законных основаниях оттягивается на срок до 2 лет. Особенность предложения состоит в финансировании процедуры банкротства на 50-90% за счет средств, вырученных от реализации вашего ипотечного жилья. Вам не нужно изыскивать дополнительные средства, чтобы решить проблемы с ипотечным долгом.
+                  </div>
+                </div>
+                <div class="disconts__item-footer d-flex">
+                  <a href="#" class="disconts__item-link arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="16px">
+                      <path class="arrow__path" fill-rule="evenodd" fill="rgb(51, 51, 51)" d="M-0.000,7.091 L28.562,7.091 L22.840,1.284 L24.110,-0.000 L32.000,8.000 L24.110,16.000 L22.840,14.716 L28.562,8.908 L-0.000,8.908 L-0.000,7.091 Z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row disconts__item border border--top border--bottom">
+              <div class="col-lg-6 disconts__item-img" style="background-image: url(img/disconts__item-img-2.jpg);"></div>
+              <div class="col-lg-6 disconts__item-texts">
+                <div class="disconts__item-main">
+                  <div class="heading heading--font-size-30 disconts__item-heading">
+                    Скидка 50-90%
+                  </div>
+                  <ul class="disconts__item-tags row">
+                    <li class="col-auto disconts__item-tags-item">
+                      <a href="#" class="col-auto disconts__item-tags-btn micro caps">
+                        #БАНКРОТСТВО ФИЗИЧЕСКИХ ЛИЦ
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="disconts__item-text">
+                    Особенность предложения состоит в финансировании процедуры банкротства на 50-90% за счет средств, вырученных от реализации вашего ипотечного жилья. Вам не нужно изыскивать дополнительные средства, чтобы решить проблемы с ипотечным долгом.
+                  </div>
+                </div>
+                <div class="disconts__item-footer d-flex">
+                  <a href="#" class="disconts__item-link arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="16px">
+                      <path class="arrow__path" fill-rule="evenodd" fill="rgb(51, 51, 51)" d="M-0.000,7.091 L28.562,7.091 L22.840,1.284 L24.110,-0.000 L32.000,8.000 L24.110,16.000 L22.840,14.716 L28.562,8.908 L-0.000,8.908 L-0.000,7.091 Z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row disconts__item border border--top border--bottom">
+              <div class="col-lg-6 disconts__item-img" style="background-image: url(img/disconts__item-img-3.jpg);"></div>
+              <div class="col-lg-6 disconts__item-texts">
+                <div class="disconts__item-main">
+                  <div class="heading heading--font-size-30 disconts__item-heading">
+                    Законная рассрочка
+                  </div>
+                  <ul class="disconts__item-tags row">
+                    <li class="col-auto disconts__item-tags-item">
+                      <a href="#" class="col-auto disconts__item-tags-btn micro caps">
+                        #БАНКРОТСТВО ФИЗИЧЕСКИХ И ЮРИДИЧЕСКИХ ЛИЦ
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="disconts__item-text">
+                    Услуга позволяет быстро вмешаться, остановить процесс продажи залога (ипотечного жилья) и получить передышку в платежах. Момент продажи жилья на законных основаниях оттягивается на срок до 2 лет. Особенность предложения состоит в финансировании процедуры банкротства на 50-90% за счет средств, вырученных от реализации вашего ипотечного жилья. Вам не нужно изыскивать дополнительные средства, чтобы решить проблемы с ипотечным долгом.
+                  </div>
+                </div>
+                <div class="disconts__item-footer d-flex">
+                  <a href="#" class="disconts__item-link arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="16px">
+                      <path class="arrow__path" fill-rule="evenodd" fill="rgb(51, 51, 51)" d="M-0.000,7.091 L28.562,7.091 L22.840,1.284 L24.110,-0.000 L32.000,8.000 L24.110,16.000 L22.840,14.716 L28.562,8.908 L-0.000,8.908 L-0.000,7.091 Z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row grid">
+            <div class="col-12 border border--left border--right"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section garanty">
+      <div class="container garanty__container">
+        <div class="row garanty__header">
+          <div class="row grid">
+            <div class="col-lg-6 border border--left border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right garanty__pattern garanty__pattern--1"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right garanty__pattern garanty__pattern--2"></div>
+          </div>
+          <div class="col-lg-6 garanty__heading-wrap">
+            <h2 class="heading heading--font-size-40 garanty__heading">
+              Гарантии качества юридических услуг
+            </h2>
+          </div>
+        </div>
+        <div class="row garanty__row garanty__row--padding-bottom-0">
+          <div class="row grid">
+            <div class="col-lg-6 col-sm-6 border border--left border--right"></div>
+            <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="garanty__main-item" style="background-image: url(img/garanty__main-item-bg.jpg);">
+              <div class="garanty__main-item-texts">
+                <div class="garanty__main-item-heading heading heading--font-size-30">
+                  Возврат денег
+                </div>
+                <div class="garanty__main-item-text">
+                  Если по итогам процедуры банкротства нет судебного решения о списании долгов, то мы возвращаем вам деньги (за исключением тарифных планов «Эконом», «Эконом+»)
+                </div>
+                <div class="garanty__main-item-subheading heading heading--font-size-20 font-weight-500">
+                  Условие прописывается в договоре
+                </div>
+              </div>
+            </div>
+            <div class="row garanty__btns">
+              <div class="col-sm-6 border border--left border--right">
+                <button class="btn caps garanty__btn border border--bottom">
+                  КОНСУЛЬТАЦИЯ В МОСКВЕ
+                </button>
+              </div>
+              <div class="col-sm-6 border border--right border-xs--left">
+                <button class="btn caps garanty__btn border border--bottom">
+                  ДИСТАНЦИОННО >20 РЕГИОНОВ РФ
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 row garanty__items">
+            <div class="col-sm-6 garanty__item border border--bottom">
+              <div class="garanty__item-heading heading heading--font-size-20 font-weight-500">
+                Оплата строго по договору
+              </div>
+              <div class="garanty__item-text">
+                Вы заплатите ровно столько, сколько указано в договоре. Мы тщательно подходим к анализу ваших данных на этапе знакомства и гарантируем, что сумма договора не изменится
+              </div>
+            </div>
+            <div class="col-sm-6 garanty__item border border--bottom">
+              <div class="garanty__item-heading heading heading--font-size-20 font-weight-500">
+                Вся рутина нашими силами
+              </div>
+              <div class="garanty__item-text">
+                Вся рутинная работа — подготовка необходимых заявлений, ходатайств и пр. полностью автоматизирована. Вам остается лишь в срок предоставлять требуемые документы
+              </div>
+            </div>
+            <div class="col-sm-6 garanty__item border border-xs--bottom">
+              <div class="garanty__item-heading heading heading--font-size-20 font-weight-500">
+                Прием заявления
+              </div>
+              <div class="garanty__item-text">
+                Заявление о признании вас банкротом будет составлено согласно всем требованиями 127-ФЗ «О несостоятельности (банкротстве)» и с учетом судебной практики регионов, в которых мы работаем
+              </div>
+            </div>
+            <div class="col-sm-6 garanty__item">
+              <div class="garanty__item-heading heading heading--font-size-20 font-weight-500">
+                Предоставление финансового управляющего
+              </div>
+              <div class="garanty__item-text">
+                Мы гарантируем, что саморегулируемая организация предоставит финансового управляющего для вашего дела о банкротстве, с которым
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section seo">
+      <div class="container seo__container">
+        <div class="row seo__header">
+          <div class="row grid">
+            <div class="col-lg-6 border border--left border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+          </div>
+          <div class="col-lg-6 seo__heading-wrap seo__heading-wrap">
+            <h2 class="heading heading--font-size-40 seo__heading">
+              SEO текст
+            </h2>
+          </div>
+        </div>
+        <div class="seo__text border border--top border--left border--right border--bottom">
+          Процедуру несостоятельности лучше доверить узкоспециализированным юристам и финансовому управляющему, которые имеют за собой положительную практику. Мы имеем собственные наработанные юридические технологии, которые позволяют списать долги каждому нашему клиенту. Весь процесс может длиться от 6 месяцев до 1 года, в зависимости от сложившейся ситуации, в которую попал должник. Сама по себе процедура очень сложная, и каждый неосторожный шаг, может привести к не списанию долга. В соответствии со статьей 213.4 закона процедура банкротства физического лица подходит всем гражданам, которые реально не могут платить по своим обязательствам, при любой сумме долга, стоимости имущества ниже размера долга, либо его отсутствии и недостаточного дохода для погашения.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="row footer__header">
+        <div class="row grid">
+          <div class="col-lg-9 border border--light border--left border--right"></div>
+          <div class="col-lg-3 d-lg-block d-none border border--light border--right"></div>
+        </div>
+        <form class="col-lg-9 order-lg-0 order-1 footer__form">
+          <div class="row grid footer__form-grid">
+            <div class="col-12 border border--light border--right"></div>
+          </div>
+          <div class="footer__form-row row">
+            <div class="col-12 footer__form-heading-wrap">
+              <div class="heading heading--font-size-20 footer__form-heading">
+                Получите бесплатную консультацию о списании долгов прямо сейчас!
+              </div>
+            </div>
+            <label class="col-sm-4 footer__form-label border border--light border--right border-xs--right-none border-xs--bottom">
+              <input type="text" class="input input--name input--small input--dark" placeholder="Ваше имя">
+            </label>
+            <label class="col-sm-4 footer__form-label">
+              <input type="tel" class="input input--tel input--small input--dark" placeholder="Номер телефона">
+            </label>
+            <div class="col-sm-4">
+              <button class="btn btn--small btn--yellow caps footer__form-btn">
+                ОТПРАВИТЬ
+              </button>
+            </div>
+          </div>
+          <div class="footer__form-text footer__text small">
+            Передавая свои данные, вы даете согласие на <a href="#" target="_blank" class="link footer__form-text-link">обработку персональных данных</a>
+          </div>
+        </form>
+        <div class="col-lg-3 footer__logo-wrap">
+          <a href="#" class="footer__logo">
+            <img src="img/logo-2.svg" alt="Img" class="img-responsive footer__logo-img">
+            <div class="heading heading--font-size-34 footer__logo-caption">
+              Кликправо
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row footer__row">
+        <div class="row grid">
+          <div class="col-lg-3 col-sm-6 border border--light border--right border--left"></div>
+          <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--light border--right"></div>
+          <div class="col-lg-3 d-lg-block d-none border border--light border--right footer__pattern"></div>
+          <div class="col-lg-3 d-lg-block d-none border border--light border--right"></div>
+        </div>
+        <div class="col-lg-3 col-sm-6 order-lg-0 order-1 footer__block border border--light border--top">
+          <div class="heading heading--font-size-20 font-weight-500 footer__block-heading">
+            Цены и услуги
+          </div>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Банкротство физических лиц</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Банкротство юридических лиц</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Юридические услуги для бизнеса</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Юридические услуги для граждан</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 order-lg-0 order-1 footer__block border border--light border--top">
+          <div class="heading heading--font-size-20 font-weight-500 footer__block-heading">
+            О компании
+          </div>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Судебная практика</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Отзывы</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">FAQ</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 order-lg-0 order-1 footer__block border border--light border--top">
+          <div class="heading heading--font-size-20 font-weight-500 footer__block-heading">
+            База-знаний
+          </div>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Новости</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Статьи</a>
+            </li>
+            <li class="footer__block-list-item">
+              <a href="#" class="link footer__text">Документы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer__block border border--light border--top">
+          <a href="tel:+78006749282" class="heading heading--font-size-20 font-weight-500 footer__block-heading footer__block-link">
+            +7 (800) 674-92-82
+          </a>
+          <a href="tel:+78452674922" class="heading heading--font-size-20 font-weight-500 footer__block-heading footer__block-link">
+            +7 (8452) 674-922
+          </a>
+          <a href="mailto:info@clikpravo.ru" class="footer__text link link--border-none">info@clikpravo.ru</a>
+          <ul class="footer__block-socials d-flex">
+            <li class="footer__block-socials-item col-4">
+              <a href="#" class="footer__block-socials-link" style="background-image: url(img/vk.svg); background-color: #5f90c7;"></a>
+            </li>
+            <li class="footer__block-socials-item col-4">
+              <a href="#" class="footer__block-socials-link" style="background-image: url(img/fb.svg); background-color: #3b5998;"></a>
+            </li>
+            <li class="footer__block-socials-item col-4">
+              <a href="#" class="footer__block-socials-link" style="background-image: url(img/yt.svg); background-color: #f15450;"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer__footer">
+        <div class="row grid">
+          <div class="col-12 border border--light border--top border--left border--right"></div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 footer__info-block">
+          <div class="footer__text">
+            © 2020. КликПраво
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 footer__info-block">
+          <a href="#" target="_blank" class="footer__text link">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 footer__info-block">
+          <a href="#" class="footer__text link">
+            Карта сайта
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/app.min.js"></script>
+
+</body>
+</html>

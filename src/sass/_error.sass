@@ -1,0 +1,48 @@
+.error
+
+  &__main
+    padding: 52px 60px 120px
+  &__heading
+    margin-bottom: 50px
+  &__link
+    &-wrap
+      margin-bottom: 20px
+  &__btn
+    display: inline-flex
+    margin-top: 35px
+    width: auto
+    padding-left: 115px
+    padding-right: 115px
+  &__img
+    max-width: calc(100% + 33px)
+    margin-top: -1px
+    margin-bottom: -1px
+    margin-left: -1px
+    margin-right: -32px
+    &-grid
+      height: calc(100% - 280px)
+  @media (max-width: 1499.98px)
+    &__img
+      max-width: calc(100% + 26px)
+      margin-right: -25px
+      &-grid
+        height: calc(100% - 221px)
+    &__main
+      padding: 45px 30px 90px
+  @media (max-width: 1199.98px)
+    &__main
+      padding: 52px 60px
+    &__img
+      width: 100%
+      max-width: 100P
+      margin: 0
+  @media (max-width: 767.98px)
+    &__heading
+      margin-bottom: 30px
+    &__btn
+      width: 100%
+      padding: 0
+      margin-top: 10px
+  @media (max-width: 575.98px)
+    &__main
+      padding: 30px 15px

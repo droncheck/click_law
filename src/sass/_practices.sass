@@ -1,0 +1,141 @@
+.practices
+  &__pattern
+    &::before
+      content: ''
+      position: absolute
+      left: -1px
+      bottom: -1px
+      width: 50%
+      padding-top: 25%
+      background: url(../img/pattern-10.svg) no-repeat left bottom / 100%
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+  &__row
+    margin-bottom: -30px
+    &-wrap
+      position: relative
+  &__item
+    padding: 52px 59px 137px
+    margin-top: -1px
+    margin-bottom: 30px
+    background: $bg
+    &-heading
+      margin-bottom: 20px
+    &-date
+      position: relative
+      display: inline-block
+      margin-bottom: 4px
+      &::after
+        content: ''
+        position: absolute
+        right: -68px
+        top: 50%
+        transform: translate(0, -50%)
+        width: 56px
+        height: 2px
+        background-color: $black
+    &-dates
+      margin-bottom: 20px
+      &-item
+        margin-right: 60px
+        &:last-child
+          margin-right: 0
+          .practices__item-date
+            &::after
+              display: none
+    &-footer
+      position: absolute
+      bottom: 52px
+      left: 60px
+      right: 60px
+      justify-content: space-between
+      align-items: flex-end
+    &-result
+      &-caption
+        margin-bottom: 6px
+      &-sum
+        &::after
+          content: '\00a0\20BD'
+    &.border--right
+      &:nth-child(3n)
+        border-right-style: none
+  &__footer
+    padding-bottom: 120px
+    background: $bg
+    &--padding-bottom-0
+      padding-bottom: 0
+  @media (max-width: 1499.98px)
+    &__footer
+      padding-bottom: 90px
+      &--padding-bottom-0
+        padding-bottom: 0
+    &__item
+      padding: 45px 30px 122px
+      &-date
+        &::after
+          right: -60px
+          width: 50px
+      &-dates
+        &-item
+          margin-right: 56px
+      &-footer
+        bottom: 45px
+        left: 30px
+        right: 30px
+  @media (max-width: 1199.98px)
+    &__heading
+      &-wrap
+        padding: 52px 60px 52px
+    &__item
+      &.border--right
+        &:nth-child(3n)
+          border-right-style: solid
+        &:nth-child(2n)
+          border-right-style: none
+  @media (max-width: 991.98px)
+    &__item
+      &-date
+        &::after
+          display: none
+      &-dates
+        &-item
+          margin-right: 20px
+  @media (max-width: 767.98px)
+    &__item
+      padding: 52px 60px 119px
+      &.border--right
+        border-right-style: none
+        &:nth-child(3n)
+          border-right-style: none
+      &-date
+        &::after
+          display: block
+          right: -64px
+      &-dates
+        &-item
+          margin-right: 56px
+      &-footer
+        bottom: 52px
+        left: 60px
+        right: 60px
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__footer
+      padding-bottom: 60px
+      &--padding-bottom-0
+        padding-bottom: 0
+    &__item
+      padding: 30px 15px 97px
+      &-date
+        &::after
+          display: none
+      &-dates
+        &-item
+          margin-right: 40px
+      &-footer
+        left: 15px
+        right: 15px
+        bottom: 30px

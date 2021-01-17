@@ -1,4 +1,7 @@
 .faq
+  &__grid
+    &-up
+      z-index: 2
   &__pattern
     &::before
       content: ''
@@ -21,15 +24,17 @@
   &__item
     position: relative
     height: 100%
-
     &-wrap
       padding-left: 15px
       padding-right: 15px
       margin-top: -1px
       margin-bottom: 30px
       &:nth-child(3n)
-        .faq__item
+        .faq__item,
+        .reviews__item
           border-right-style: none
+        .faq__form
+          // border-right-style: none
     &-img
       background-repeat: no-repeat
       background-position: center
@@ -78,12 +83,15 @@
         padding: 52px 60px 52px
     &__form
       padding: 52px 60px
+      &-wrap
+        order: 1
     &__item
       &-texts
         min-height: auto
       &-wrap
         &:nth-child(3n)
-          .faq__item
+          .faq__item,
+          .reviews__item
             border-right-style: solid
   @media (max-width: 767.98px)
     &__item

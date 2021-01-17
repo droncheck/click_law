@@ -1,0 +1,53 @@
+.tariffs
+  &__main
+    position: relative
+    padding: 60px
+    &-heading
+      margin-bottom: 27px
+    &-btn
+      display: inline-flex
+      width: auto
+      padding-left: 115px
+      padding-right: 115px
+  &__heading
+    &-wrap
+      padding: 112px 60px 52px
+  &__table
+    &-row
+      padding: 15px 0
+    &-footer
+      margin: 35px 0 50px
+    &-cell
+      padding-right: 15px
+      &:last-child
+        padding-right: 0
+      &-price
+        &::after
+          content: '\00a0\20BD'
+  @media (max-width: 1499.98px)
+    &__main
+      padding: 45px 30px
+  @media (max-width: 1199.98px)
+    &__heading
+      &-wrap
+        padding: 52px 60px
+    &__main
+      padding: 52px 60px
+  @media (max-width: 767.98px)
+    &__main
+      &-btn
+        width: 100%
+    &__table
+      &-header
+        display: none
+      &-cell
+        margin-bottom: 8px
+        padding-right: 0
+        &:last-child
+          margin-bottom: 0
+  @media (max-width: 575.98px)
+    &__heading
+      &-wrap
+        padding: 30px 15px
+    &__main
+      padding: 30px 15px
