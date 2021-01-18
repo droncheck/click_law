@@ -43,3 +43,31 @@ export function initFileInputs() {
     });
   });
 }
+
+export function initFilters() {
+  const $parents = document.querySelectorAll('[data-filter-parent]');
+
+  $parents.forEach($parent => {
+    const $btns = $parent.querySelectorAll('[data-filter-btn');
+    const $items = $parent.querySelectorAll('[data-filter-item');
+
+    $btns.forEach($btn => {
+      $btn.addEventListener('click', () => {
+        $btn.classList.add('active');
+        $btns.forEach($button => {
+          if ($button.dataset.filterBtn !== $btn.dataset.filterBtn) {
+            $button.classList.remove('active');
+          }
+        });
+
+        $items.forEach($item => {
+          if ($item.dataset.filterItem === $btn.dataset.filterBtn) {
+            $item.classList.add('active');
+          } else {
+            $item.classList.remove('active');
+          }
+        });
+      })
+    });
+  });
+}

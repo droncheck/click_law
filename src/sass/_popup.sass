@@ -1,0 +1,85 @@
+.popup
+  position: relative
+  max-width: 480px
+  padding: 52px 60px
+  margin: 60px auto
+  background-color: #eee
+  &__overlay
+    position: fixed
+    z-index: 104
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0, 0, 0, .4)
+    opacity: 0
+    pointer-events: none
+    transition: all 0.25s
+    &.active
+      opacity: 1
+  &__wrap
+    position: fixed
+    z-index: 105
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow-y: auto
+    opacity: 0
+    pointer-events: none
+    transition: all 0.25s
+    &.active
+      opacity: 1
+      pointer-events: auto
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    width: 39px
+    height: 39px
+    background: url(../img/close.svg) no-repeat center / 14px 14px #eee
+  &__heading
+    margin-bottom: 34px
+  &__radio
+    &-label
+      position: relative
+      display: block
+      padding-left: 8px
+      padding-right: 8px
+      padding-bottom: 20px
+      color: $text-gray
+      cursor: pointer
+    &-input:checked + .popup__radio-label
+      color: $text-black
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        height: 6px
+        background: $yellow-4
+  &__radios
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+  &__form
+    &-text
+      margin-top: 17px
+      opacity: 0.5
+  @media (max-width: 767.98px)
+    max-width: 100%
+    min-height: 100%
+    margin: 0
+    &__wrap
+      display: block
+    &__heading
+      margin-bottom: 20px
+  @media (max-width: 575.98px)
+    padding: 45px 15px 30px
+    &__radio-input:checked +.popup__radio-label
+      &::before
+        height: 4px

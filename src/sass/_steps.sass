@@ -26,6 +26,8 @@
           background: $bg
   &__tabs
     &-pill
+      display: block
+      width: 100%
       position: relative
       padding: 0px 60px
       text-align: center
@@ -61,6 +63,14 @@
         bottom: 0
         height: 4px
         background: $yellow-4
+      &-wrap
+        &:first-child
+          .steps__tabs-pill:not(.active)
+            &::before
+              display: none
+            .steps__tabs-pill-text
+              &::before
+                display: none
   &__item
     padding-bottom: 70px
     &--padding-top
@@ -140,6 +150,11 @@
       margin-bottom: 17px
       font-size: 0.875em
       font-weight: 700
+
+    &[data-filter-item]
+      display: none
+      &.active
+        display: block
   @media (max-width: 1499.98px)
     &__heading
       br

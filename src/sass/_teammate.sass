@@ -1,4 +1,14 @@
 .teammate
+  &__pattern
+    margin-left: auto
+    &::before
+      content: ''
+      position: absolute
+      top: -81px
+      left: 0
+      width: 1032px
+      height: 562px
+      background: url(../img/pattern-35.svg) no-repeat left top / 100%
   &__texts
     padding: 52px 60px
   &__main
@@ -30,8 +40,15 @@
       background-repeat: no-repeat
       background-position: center
   @media (max-width: 1499.98px)
+    &__pattern
+      &::before
+        left: -75px
     &__texts
       padding: 45px 30px
+  @media (max-width: 1199.98px)
+    &__pattern
+      &::before
+        display: none
   @media (max-width: 991.98px)
     &__texts
       padding: 52px 60px

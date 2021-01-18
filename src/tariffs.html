@@ -647,9 +647,9 @@
                 Процедурами банкротства в управляет компьютерная система собственной разработки. Тотальная автоматизация процессов позволяет нам снизить затраты и установить лучшие % в&nbsp;регионах.
               </div>
             </div>
-            <button class="btn caps btn--yellow-2 pricing__info-btn border border--yellow border--top border--left border--right border--bottom">
+            <a href="#" class="btn caps btn--yellow-2 pricing__info-btn border border--yellow border--top border--left border--right border--bottom">
               РАСЧИТАТЬ СТОИМОСТЬ УСЛУГИ
-            </button>
+            </a>
           </div>
         </div>
         <div class="row grid pricing__grid">
@@ -662,7 +662,7 @@
     </section>
 
     <section class="section tariffs">
-      <div class="container tariffs__container">
+      <div class="container tariffs__container" data-filter-parent>
         <div class="row tariffs__header">
           <div class="row grid">
             <div class="col-lg-6 border border--left border--right"></div>
@@ -677,17 +677,17 @@
         </div>
         <ul class="d-flex filter tariffs__filter border border--top border--left border--right">
           <li class="col-auto filter__item">
-            <button class="filter__btn caps active">
+            <button class="filter__btn caps active" data-filter-btn="1">
               ЭКОНОМ
             </button>
           </li>
           <li class="col-auto filter__item">
-            <button class="filter__btn caps">
+            <button class="filter__btn caps" data-filter-btn="2">
               СТАНДАРТ
             </button>
           </li>
           <li class="col-auto filter__item">
-            <button class="filter__btn caps">
+            <button class="filter__btn caps" data-filter-btn="3">
               ЭКСКЛЮЗИВ
             </button>
           </li>
@@ -696,140 +696,412 @@
           <div class="row grid">
             <div class="col-12 border border--left border--right border--top border--bottom"></div>
           </div>
-          <div class="heading heading--font-size-30 tariffs__main-heading">
-            Сумма долгов до 700 000 ₽
+          <div class="tariffs__table-wrap active" data-filter-item="1">
+            <div class="heading heading--font-size-30 tariffs__main-heading">
+              Сумма долгов до 700 000 ₽
+            </div>
+            <div class="tariffs__table">
+              <div class="row tariffs__table-header">
+                <div class="col-sm-4 tariffs__table-cell"></div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-header-text">
+                    Базовая стоимость
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell"></div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    Аванс
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    при заключении договора
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    Нотариальная доверенность
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    2 000
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    при заключении договора
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    1 месяц
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    12 800
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    г/пошлина +50% депозита в суд
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    2 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    50% депозита в суд
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    3 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    ежемесячный платеж
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    4 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    ежемесячный платеж
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-footer">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30">
+                    Всего:
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30 tariffs__table-cell-price">
+                    87 500
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30">
+                    ≈12.5% от суммы ваших долгов
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tariffs__table">
-            <div class="row tariffs__table-header">
-              <div class="col-sm-4 tariffs__table-cell"></div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="tariffs__table-header-text">
-                  Базовая стоимость
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell"></div>
+          <div class="tariffs__table-wrap" data-filter-item="2">
+            <div class="heading heading--font-size-30 tariffs__main-heading">
+              Сумма долгов до 700 000 ₽ 2
             </div>
-            <div class="row tariffs__table-row border border--bottom">
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  Аванс
+            <div class="tariffs__table">
+              <div class="row tariffs__table-header">
+                <div class="col-sm-4 tariffs__table-cell"></div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-header-text">
+                    Базовая стоимость
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell"></div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    Аванс
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    при заключении договора
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
-                  7 500
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    Нотариальная доверенность
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    2 000
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    при заключении договора
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  при заключении договора
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    1 месяц
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    12 800
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    г/пошлина +50% депозита в суд
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row tariffs__table-row border border--bottom">
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  Нотариальная доверенность
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    2 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    50% депозита в суд
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
-                  2 000
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    3 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    ежемесячный платеж
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  при заключении договора
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    4 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    ежемесячный платеж
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row tariffs__table-row border border--bottom">
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  1 месяц
+              <div class="row tariffs__table-footer">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30">
+                    Всего:
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
-                  12 800
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30 tariffs__table-cell-price">
+                    87 500
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  г/пошлина +50% депозита в суд
-                </div>
-              </div>
-            </div>
-            <div class="row tariffs__table-row border border--bottom">
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  2 месяца
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
-                  7 500 ₽
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  50% депозита в суд
-                </div>
-              </div>
-            </div>
-            <div class="row tariffs__table-row border border--bottom">
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  3 месяца
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
-                  7 500 ₽
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  ежемесячный платеж
-                </div>
-              </div>
-            </div>
-            <div class="row tariffs__table-row border border--bottom">
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  4 месяца
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
-                  7 500 ₽
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
-                  ежемесячный платеж
-                </div>
-              </div>
-            </div>
-            <div class="row tariffs__table-footer">
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="tariffs__table-footer-text heading heading--font-size-30">
-                  Всего:
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="tariffs__table-footer-text heading heading--font-size-30 tariffs__table-cell-price">
-                  87 500
-                </div>
-              </div>
-              <div class="col-sm-4 tariffs__table-cell">
-                <div class="tariffs__table-footer-text heading heading--font-size-30">
-                  ≈12.5% от суммы ваших долгов
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30">
+                    ≈12.5% от суммы ваших долгов
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <button class="btn tariffs__main-btn caps border border--left border--right border--top border--bottom">
+          <div class="tariffs__table-wrap" data-filter-item="3">
+            <div class="heading heading--font-size-30 tariffs__main-heading">
+              Сумма долгов до 700 000 ₽ 3
+            </div>
+            <div class="tariffs__table">
+              <div class="row tariffs__table-header">
+                <div class="col-sm-4 tariffs__table-cell"></div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-header-text">
+                    Базовая стоимость
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell"></div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    Аванс
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    при заключении договора
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    Нотариальная доверенность
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    2 000
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    при заключении договора
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    1 месяц
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    12 800
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    г/пошлина +50% депозита в суд
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    2 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    50% депозита в суд
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    3 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    ежемесячный платеж
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-row border border--bottom">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    4 месяца
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text tariffs__table-cell-price">
+                    7 500 ₽
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="heading heading--font-size-20 font-weight-500 tariffs__table-cell-text">
+                    ежемесячный платеж
+                  </div>
+                </div>
+              </div>
+              <div class="row tariffs__table-footer">
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30">
+                    Всего:
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30 tariffs__table-cell-price">
+                    87 500
+                  </div>
+                </div>
+                <div class="col-sm-4 tariffs__table-cell">
+                  <div class="tariffs__table-footer-text heading heading--font-size-30">
+                    ≈12.5% от суммы ваших долгов
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn tariffs__main-btn caps border border--left border--right border--top border--bottom" data-popup-btn="default">
             ОФОРМИТЬ
           </button>
         </div>
@@ -983,12 +1255,12 @@
             </div>
             <div class="row garanty__btns">
               <div class="col-sm-6 border border--left border--right">
-                <button class="btn caps garanty__btn border border--bottom">
+                <button class="btn caps garanty__btn border border--bottom" data-popup-btn="consult">
                   КОНСУЛЬТАЦИЯ В МОСКВЕ
                 </button>
               </div>
               <div class="col-sm-6 border border--right border-xs--left">
-                <button class="btn caps garanty__btn border border--bottom">
+                <button class="btn caps garanty__btn border border--bottom" data-popup-btn="consultDistant">
                   ДИСТАНЦИОННО >20 РЕГИОНОВ РФ
                 </button>
               </div>
@@ -1099,8 +1371,8 @@
       <div class="row footer__row">
         <div class="row grid">
           <div class="col-lg-3 col-sm-6 border border--light border--right border--left"></div>
-          <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--light border--right"></div>
-          <div class="col-lg-3 d-lg-block d-none border border--light border--right footer__pattern"></div>
+          <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--light border--right footer__pattern"></div>
+          <div class="col-lg-3 d-lg-block d-none border border--light border--right"></div>
           <div class="col-lg-3 d-lg-block d-none border border--light border--right"></div>
         </div>
         <div class="col-lg-3 col-sm-6 order-lg-0 order-1 footer__block border border--light border--top">
@@ -1200,6 +1472,175 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup__overlay"></div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="recall">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Заказать обратный звонок
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <input type="tel" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Номер телефона">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="default">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Оставить заявку
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <input type="tel" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Номер телефона">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="consult">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Заказать консультацию <div data-popup-city>в Москве</div>
+      </div>
+      <div class="popup__radios border border--bottom">
+        <label class="popup__radio">
+          <input value="в Москве" type="radio" name="popupCity" class="visually-hidden popup__radio-input" data-popup-radio checked>
+          <span class="popup__radio-label caps">
+            В МОСКВЕ
+          </span>
+        </label>
+        <label class="popup__radio">
+          <input value="дистанционно по РФ" type="radio" name="popupCity" class="visually-hidden popup__radio-input" data-popup-radio>
+          <span class="popup__radio-label caps">
+            ДИСТАНЦИОННО ПО РФ
+          </span>
+        </label>
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <input type="tel" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Номер телефона">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="consultDistant">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Заказать консультацию <div data-popup-city>дистанционно по РФ</div>
+      </div>
+      <div class="popup__radios border border--bottom">
+        <label class="popup__radio">
+          <input value="в Москве" type="radio" name="popupCityDistant" class="visually-hidden popup__radio-input" data-popup-radio>
+          <span class="popup__radio-label caps">
+            В МОСКВЕ
+          </span>
+        </label>
+        <label class="popup__radio">
+          <input value="дистанционно по РФ" type="radio" name="popupCityDistant" class="visually-hidden popup__radio-input" data-popup-radio checked>
+          <span class="popup__radio-label caps">
+            ДИСТАНЦИОННО ПО РФ
+          </span>
+        </label>
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <input type="tel" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Номер телефона">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="comment">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Оставьте <br>
+        комментарий
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
 
 
 

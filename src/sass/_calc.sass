@@ -98,8 +98,18 @@
             flex: 0 0 240px
             max-width: 240px
   &__footer
+    justify-content: flex-end
     min-height: 120px
     padding-bottom: 90px
+  &__btn
+    &--next
+      &::after
+        content: ''
+        display: inline-block
+        width: 7px
+        height: 12px
+        margin-left: 11px
+        background: url(../img/right.svg) no-repeat center / 100%
   @media (max-width: 1499.98px)
     &__main
       &-tab

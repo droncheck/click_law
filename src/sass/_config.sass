@@ -202,7 +202,7 @@ a
   height: 100%
 
 .content,
-.oveflow-hidden
+.overflow-hidden
   overflow: hidden
 
 .container
@@ -236,3 +236,25 @@ a
   height: 0
   overflow: hidden
   transition: height 0.25s
+
+
+.goverlay
+  @media (min-width: 769px)
+    background: rgba(0,0,0,.4)
+
+.glightbox-clean .gclose,
+.glightbox-clean .gnext,
+.glightbox-clean .gprev
+  @media (min-width: 769px)
+    background-color: transparent
+    &:hover,
+    &:focus
+      background-color: transparent
+
+.gslide-media
+  position: relative
+
+.gclose.disabled,
+.gnext.disabled,
+.gprev.disabled
+  opacity: 0

@@ -567,12 +567,12 @@
                   </div>
                   <div class="main__slide-btns row">
                     <div class="col-md-4 col-6 border border--left border--top border--bottom border--right main__btn-wrap border-xxs--right-none">
-                      <button class="btn caps main__btn">
+                      <button class="btn caps main__btn" data-popup-btn="consult">
                         ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
                       </button>
                     </div>
                     <div class="col-md-1 col-2 border border--right border--top border--bottom border-xxs--left main__btn-wrap">
-                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);"></button>
+                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);" data-popup-btn="comment"></button>
                     </div>
                   </div>
                 </div>
@@ -623,12 +623,12 @@
                   </div>
                   <div class="main__slide-btns row">
                     <div class="col-md-4 col-6 border border--left border--top border--bottom border--right main__btn-wrap border-xxs--right-none">
-                      <button class="btn caps main__btn">
+                      <button class="btn caps main__btn" data-popup-btn="consult">
                         ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
                       </button>
                     </div>
                     <div class="col-md-1 col-2 border border--right border--top border--bottom border-xxs--left main__btn-wrap">
-                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);"></button>
+                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);" data-popup-btn="comment"></button>
                     </div>
                   </div>
                 </div>
@@ -679,12 +679,12 @@
                   </div>
                   <div class="main__slide-btns row">
                     <div class="col-md-4 col-6 border border--left border--top border--bottom border--right main__btn-wrap border-xxs--right-none">
-                      <button class="btn caps main__btn">
+                      <button class="btn caps main__btn" data-popup-btn="consult">
                         ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
                       </button>
                     </div>
                     <div class="col-md-1 col-2 border border--right border--top border--bottom border-xxs--left main__btn-wrap">
-                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);"></button>
+                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);" data-popup-btn="comment"></button>
                     </div>
                   </div>
                 </div>
@@ -735,12 +735,12 @@
                   </div>
                   <div class="main__slide-btns row">
                     <div class="col-md-4 col-6 border border--left border--top border--bottom border--right main__btn-wrap border-xxs--right-none">
-                      <button class="btn caps main__btn">
+                      <button class="btn caps main__btn" data-popup-btn="consult">
                         ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
                       </button>
                     </div>
                     <div class="col-md-1 col-2 border border--right border--top border--bottom border-xxs--left main__btn-wrap">
-                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);"></button>
+                      <button class="btn btn--icon btn--transparent main__btn" style="background-image: url(img/message.svg);" data-popup-btn="comment"></button>
                     </div>
                   </div>
                 </div>
@@ -856,116 +856,204 @@
             </h2>
           </div>
         </div>
-        <div class="row steps__row">
-          <div class="row grid">
-            <div class="col-lg-3 col-6 border border--right border--left border-xs--right-none"></div>
-            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
-            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
-            <div class="col-lg-3 col-6 border border--right"></div>
-          </div>
-          <div class="col-lg-6 steps__tabs-wrap">
-            <div class="row steps__tabs">
-              <div class="col-sm-6">
-                <div class="steps__tabs-pill caps border border--top border--bottom border-xs--bottom-none active">
-                  <span class="steps__tabs-pill-text">ДЛЯ ФИЗИЧЕСКОГО ЛИЦА</span>
+        <div data-filter-parent>
+          <div class="row steps__row">
+            <div class="row grid">
+              <div class="col-lg-3 col-6 border border--right border--left border-xs--right-none"></div>
+              <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+              <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+              <div class="col-lg-3 col-6 border border--right"></div>
+            </div>
+            <div class="col-lg-6 steps__tabs-wrap">
+              <div class="row steps__tabs">
+                <div class="col-sm-6 steps__tabs-pill-wrap">
+                  <button class="steps__tabs-pill caps border border--top border--bottom border-xs--bottom-none active" data-filter-btn="1">
+                    <span class="steps__tabs-pill-text">ДЛЯ ФИЗИЧЕСКОГО ЛИЦА</span>
+                  </button>
+                </div>
+                <div class="col-sm-6 steps__tabs-pill-wrap">
+                  <button class="steps__tabs-pill caps border border--top border--bottom" data-filter-btn="2">
+                    <span class="steps__tabs-pill-text">ДЛЯ ЮРИДИЧЕСКОГО ЛИЦА</span>
+                  </button>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="steps__tabs-pill caps border border--top border--bottom">
-                  <span class="steps__tabs-pill-text">ДЛЯ ЮРИДИЧЕСКОГО ЛИЦА</span>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--1 active" data-filter-item="1">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-1.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">1</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Бесплатная консультация
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Проконсультируем по общению с кредиторами, а также подготовим подробную стратегию проведения процедуры знакомства
+                </div>
+              </div>
+              <button class="btn caps steps__item-btn border border--top border--bottom border--right border-md--left" data-popup-btn="consult">
+                ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+              </button>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--2 border border-md--bottom active" data-filter-item="1">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-2.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">2</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Подготовка документов
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Это сведения о статусе, долгах, сделках, имуществе и так далее. Какие конкретно документы нужны для подтверждения банкротства физических лиц, мы расскажем чуть позже. Отметим, что Закон №127-ФЗ определяет лишь перечень обязательных для всех случаев документов
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--1" data-filter-item="2">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-1.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">1</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Бесплатная консультация
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Проконсультируем по общению с кредиторами, а также подготовим подробную стратегию проведения процедуры знакомства
+                </div>
+              </div>
+              <button class="btn caps steps__item-btn border border--top border--bottom border--right border-md--left" data-popup-btn="consult">
+                ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+              </button>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--2 border border-md--bottom" data-filter-item="2">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-2.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">2</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Наблюдение и подготовка документов
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Его целью является анализ и сохранение активов должника, определение общей суммы долговых обязательств и выявление возможности вернуть платежеспособность.  Максимальная продолжительность наблюдения составляет 7 мес.
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 steps__item steps__item--1">
-            <div class="steps__item-main">
-              <img src="img/steps__item-icon-1.png" alt="" class="img-responsive steps__item-icon">
-              <div class="steps__item-header">
-                <div class="steps__item-number">1</div>
+          <div class="row steps__row flex-lg-row-reverse ">
+            <div class="row grid">
+              <div class="col-lg-3 col-6 border border--right border--left border-xs--right-none"></div>
+              <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+              <div class="col-lg-3 d-lg-block d-none border border--right"></div>
+              <div class="col-lg-3 col-6 border border--right"></div>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--3 border border-md--bottom active" data-filter-item="1">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-3.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">3</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Подача заявления в суд
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Это сведения о статусе, долгах, сделках, имуществе и так далее. Какие конкретно документы нужны для подтверждения банкротства физических лиц, мы расскажем чуть позже. Отметим, что Закон №127-ФЗ определяет лишь перечень обязательных для всех случаев документов
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item border border-md--bottom active" data-filter-item="1">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-4.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">4</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Признание вас банкротом
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Подразумевает, что государство и кредиторы признали гражданина неплатежеспособным и прекратили преследование с требованием погасить долг после того, как все меры для максимального удовлетворения требований выполнены. В этом и есть суть банкротства физических лиц
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item border border-xs--bottom active" data-filter-item="1">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-5.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">5</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Назначение финансового управляющего
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  В процедуре реструктуризации долгов финансовый управляющий выполняет функцию “наблюдателя”. Его основная задача в этой процедуре - контроль за платежами должника в адрес кредиторов согласно утвержденному проекту плана реструктуризации долгов
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--6 active" data-filter-item="1">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-6.png" alt="" class="img-responsive steps__item-icon steps__item-icon--big">
                 <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
-                  Бесплатная консультация
+                  Освобождение от долгов
+                </div>
+                <div class="steps__item-text">
+                  Проведем процедуру банкротства, соберем документы, подадим заявление в арбитражный суд, признаем банкротом, спишем долги или вернем деньги!
                 </div>
               </div>
-              <div class="steps__item-text">
-                Проконсультируем по общению с кредиторами, а также подготовим подробную стратегию проведения процедуры знакомства
+            </div>
+
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--3 border border-md--bottom" data-filter-item="2">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-3.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">3</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Финансовое оздоровление и внешнее управление
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Процедура, применяемая в деле о банкротстве к должнику в целях восстановления его платежеспособности и погашения задолженности в соответствии с графиком погашения задолженности
+                </div>
               </div>
             </div>
-            <button class="btn caps steps__item-btn border border--top border--bottom border--right border-md--left" data-popup-btn="consult">
-              ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
-            </button>
-          </div>
-          <div class="col-lg-3 col-sm-6 steps__item steps__item--2 border border-md--bottom">
-            <div class="steps__item-main">
-              <img src="img/steps__item-icon-2.png" alt="" class="img-responsive steps__item-icon">
-              <div class="steps__item-header">
-                <div class="steps__item-number">2</div>
+            <div class="col-lg-3 col-sm-6 steps__item border border-md--bottom" data-filter-item="2">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-4.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">4</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Конкурсное производство
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Завершением признания несостоятельности должника выступает введение конкурсного производства. Сама процедура проводится строго по регламенту Закона № 127-ФЗ (стат. 124-149) и означает неизбежность банкротства бизнеса. По-прежнему и на этом этапе сторонам разрешается заключать мировое соглашение
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item border border-xs--bottom" data-filter-item="2">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-5.png" alt="" class="img-responsive steps__item-icon">
+                <div class="steps__item-header">
+                  <div class="steps__item-number">5</div>
+                  <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
+                    Мировое соглашение
+                  </div>
+                </div>
+                <div class="steps__item-text">
+                  Составление по обоюдному взаимному согласию мирового договора допускается на любом этапе рассмотрения банкротства. Первоначальное предложение может исходить от должника или кредиторов, но в действие соглашение вступает только, если никто из участников процесса не возражает
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 steps__item steps__item--6" data-filter-item="2">
+              <div class="steps__item-main">
+                <img src="img/steps__item-icon-6.png" alt="" class="img-responsive steps__item-icon steps__item-icon--big">
                 <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
-                  Подготовка документов
+                  Освобождение от долгов
                 </div>
-              </div>
-              <div class="steps__item-text">
-                Это сведения о статусе, долгах, сделках, имуществе и так далее. Какие конкретно документы нужны для подтверждения банкротства физических лиц, мы расскажем чуть позже. Отметим, что Закон №127-ФЗ определяет лишь перечень обязательных для всех случаев документов
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row steps__row flex-lg-row-reverse ">
-          <div class="row grid">
-            <div class="col-lg-3 col-6 border border--right border--left border-xs--right-none"></div>
-            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
-            <div class="col-lg-3 d-lg-block d-none border border--right"></div>
-            <div class="col-lg-3 col-6 border border--right"></div>
-          </div>
-          <div class="col-lg-3 col-sm-6 steps__item steps__item--3 border border-md--bottom">
-            <div class="steps__item-main">
-              <img src="img/steps__item-icon-3.png" alt="" class="img-responsive steps__item-icon">
-              <div class="steps__item-header">
-                <div class="steps__item-number">3</div>
-                <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
-                  Подача заявления в суд
+                <div class="steps__item-text">
+                  Проведем процедуру банкротства, соберем документы, подадим заявление в арбитражный суд, признаем банкротом, спишем долги или вернем деньги!
                 </div>
-              </div>
-              <div class="steps__item-text">
-                Это сведения о статусе, долгах, сделках, имуществе и так далее. Какие конкретно документы нужны для подтверждения банкротства физических лиц, мы расскажем чуть позже. Отметим, что Закон №127-ФЗ определяет лишь перечень обязательных для всех случаев документов
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 steps__item border border-md--bottom">
-            <div class="steps__item-main">
-              <img src="img/steps__item-icon-4.png" alt="" class="img-responsive steps__item-icon">
-              <div class="steps__item-header">
-                <div class="steps__item-number">4</div>
-                <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
-                  Признание вас банкротом
-                </div>
-              </div>
-              <div class="steps__item-text">
-                Подразумевает, что государство и кредиторы признали гражданина неплатежеспособным и прекратили преследование с требованием погасить долг после того, как все меры для максимального удовлетворения требований выполнены. В этом и есть суть банкротства физических лиц
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 steps__item border border-xs--bottom">
-            <div class="steps__item-main">
-              <img src="img/steps__item-icon-5.png" alt="" class="img-responsive steps__item-icon">
-              <div class="steps__item-header">
-                <div class="steps__item-number">5</div>
-                <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
-                  Назначение финансового управляющего
-                </div>
-              </div>
-              <div class="steps__item-text">
-                В процедуре реструктуризации долгов финансовый управляющий выполняет функцию “наблюдателя”. Его основная задача в этой процедуре - контроль за платежами должника в адрес кредиторов согласно утвержденному проекту плана реструктуризации долгов
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 steps__item steps__item--6">
-            <div class="steps__item-main">
-              <img src="img/steps__item-icon-6.png" alt="" class="img-responsive steps__item-icon steps__item-icon--big">
-              <div class="steps__item-heading heading heading--font-size-20 font-weight-500">
-                Освобождение от долгов
-              </div>
-              <div class="steps__item-text">
-                Проведем процедуру банкротства, соберем документы, подадим заявление в арбитражный суд, признаем банкротом, спишем долги или вернем деньги!
               </div>
             </div>
           </div>
@@ -1518,12 +1606,12 @@
             </div>
             <div class="row garanty__btns">
               <div class="col-sm-6 border border--left border--right">
-                <button class="btn caps garanty__btn border border--bottom">
+                <button class="btn caps garanty__btn border border--bottom" data-popup-btn="consult">
                   КОНСУЛЬТАЦИЯ В МОСКВЕ
                 </button>
               </div>
               <div class="col-sm-6 border border--right border-xs--left">
-                <button class="btn caps garanty__btn border border--bottom">
+                <button class="btn caps garanty__btn border border--bottom" data-popup-btn="consultDistant">
                   ДИСТАНЦИОННО >20 РЕГИОНОВ РФ
                 </button>
               </div>
@@ -2048,8 +2136,8 @@
       <div class="row footer__row">
         <div class="row grid">
           <div class="col-lg-3 col-sm-6 border border--light border--right border--left"></div>
-          <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--light border--right"></div>
-          <div class="col-lg-3 d-lg-block d-none border border--light border--right footer__pattern"></div>
+          <div class="col-lg-3 col-sm-6 d-sm-block d-none border border--light border--right footer__pattern"></div>
+          <div class="col-lg-3 d-lg-block d-none border border--light border--right"></div>
           <div class="col-lg-3 d-lg-block d-none border border--light border--right"></div>
         </div>
         <div class="col-lg-3 col-sm-6 order-lg-0 order-1 footer__block border border--light border--top">
@@ -2149,6 +2237,146 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup__overlay"></div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="recall">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Заказать обратный звонок
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <input type="tel" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Номер телефона">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="consult">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Заказать консультацию <div data-popup-city>в Москве</div>
+      </div>
+      <div class="popup__radios border border--bottom">
+        <label class="popup__radio">
+          <input value="в Москве" type="radio" name="popupCity" class="visually-hidden popup__radio-input" data-popup-radio checked>
+          <span class="popup__radio-label caps">
+            В МОСКВЕ
+          </span>
+        </label>
+        <label class="popup__radio">
+          <input value="дистанционно по РФ" type="radio" name="popupCity" class="visually-hidden popup__radio-input" data-popup-radio>
+          <span class="popup__radio-label caps">
+            ДИСТАНЦИОННО ПО РФ
+          </span>
+        </label>
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <input type="tel" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Номер телефона">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="consultDistant">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Заказать консультацию <div data-popup-city>дистанционно по РФ</div>
+      </div>
+      <div class="popup__radios border border--bottom">
+        <label class="popup__radio">
+          <input value="в Москве" type="radio" name="popupCityDistant" class="visually-hidden popup__radio-input" data-popup-radio>
+          <span class="popup__radio-label caps">
+            В МОСКВЕ
+          </span>
+        </label>
+        <label class="popup__radio">
+          <input value="дистанционно по РФ" type="radio" name="popupCityDistant" class="visually-hidden popup__radio-input" data-popup-radio checked>
+          <span class="popup__radio-label caps">
+            ДИСТАНЦИОННО ПО РФ
+          </span>
+        </label>
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <input type="tel" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Номер телефона">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popup__wrap" data-popup-close="true" data-popup="comment">
+
+    <div class="popup">
+      <button class="popup__close border border--left border--bottom" data-popup-close="true"></button>
+      <div class="heading heading--font-size-30 popup__heading">
+        Оставьте <br>
+        комментарий
+      </div>
+      <form class="popup__form">
+        <label class="popup__form-label">
+          <input type="text" class="popup__form-input input input--small input--gray border border--dark border--left border--right border--top" placeholder="Ваше имя">
+        </label>
+        <label class="popup__form-label">
+          <textarea class="popup__form-textarea textarea textarea--small textarea--gray border border--dark border--left border--right border--top border--bottom" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="btn caps btn--small btn--yellow-2 popup__form-btn">
+          ОТПРАВИТЬ
+        </button>
+        <div class="popup__form-text small">
+          Передавая свои данные, вы даете согласие на <a href="#" class="link">обработку персональных данных</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
 
 
 
